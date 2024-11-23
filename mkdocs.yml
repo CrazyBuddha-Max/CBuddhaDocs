@@ -1,0 +1,15 @@
+site_name: CZBuddhaHub
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  language: zh
+  logo: assets/logo.jpg
+  favicon: assets/logo.jpg
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.instant.progress
+plugins:
+  - blog
+  - search
+      
