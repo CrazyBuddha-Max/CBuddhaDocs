@@ -1,5 +1,31 @@
-site_name: CZBuddhaHub
-site_url: https://mydomain.org/mysite
+site_name: CBuddhaHub
+site_url: http://abc.cra2y6uddha.fun/
+
+nav:
+  - 基础与难题:
+    - 序言:
+      - CBuddhahub/index_basic.md
+    - 基础:
+      - basic/IDEA中的Maven使用方法.md
+    
+
+  - 数据库教程:
+    - 序言:
+      - CBuddhahub/index_db.md
+    - 正式开始:
+      - db/数据库设计与操作的重要知识点.md
+      - db/mybatis教程.md
+      - db/Redis教程.md
+  - SpringBoot教程:
+    - 序言:
+      - CBuddhahub/index_springboot.md
+    - 正式开始:
+      - CBuddhahub_springboot/SpringBoot原理.md
+      - CBuddhahub_springboot/登录校验与认证.md
+      - CBuddhahub_springboot/实现springboot分层解耦技术.md
+      - CBuddhahub_springboot/事务管理&AOP.md
+
+
 theme:
   name: material
   language: zh
@@ -9,6 +35,41 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    - navigation.path
+    - toc.follow
+    - navigation.top
+    - navigation.indexes
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: amber
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: brown
+      accent: blue grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github  
+  font:
+    text: Roboto Mono
+
 plugins:
   - blog
   - search
+
+extra_css:
+  - stylesheets/extra.css
+
+repo_url: https://github.com/CrazyBuddha-Max/CBuddhaDocs
+repo_name: CrazyBuddha-Max/CBuddhaDocs
+
