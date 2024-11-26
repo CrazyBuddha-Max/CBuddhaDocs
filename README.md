@@ -1,4 +1,4 @@
-# 欢迎来到CrazyBuddha的[个人网站](http://abc.cra2y6uddha.fun/)!!!
+# 欢迎来到CrazyBuddha的[个人网站](http://abc.cra2y6uddha.fun/)打不开就使用[备用站](https://CrazyBuddha-Max.github.io/CBuddhaDocs/)!!!
 ## 网站介绍~
 ### 这是我的个人学习网站，我会分享自己的学习技术栈和思路。
 ### 这不仅仅是提供给大家的学习平台，我需要通过大家的建议改进我的认知。并且这有助于增加我对知识的掌握程度。
