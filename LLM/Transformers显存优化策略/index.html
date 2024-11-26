@@ -43,15 +43,7 @@
     
     
       
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Roboto Mono"}</style>
-      
     
-    
-      <link rel="stylesheet" href="../../css/extra.css">
     
       <link rel="stylesheet" href="../../css/base.css">
     
@@ -402,6 +394,35 @@
     
   
   RE领域
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../code/demo-nb/" class="md-tabs__link">
+          
+  
+    
+  
+  大数据分析与代码实现
 
         </a>
       </li>
@@ -2189,6 +2210,205 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    大数据分析与代码实现
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            大数据分析与代码实现
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Jupyter笔记本
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            Jupyter笔记本
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/demo-nb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupyter Notebook with cells
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python文件
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python文件
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/notebook/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupytext demo (.py)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2384,30 +2604,30 @@
 </tbody>
 </table>
 <h3 id="pythontransformers">推荐的参数设置：小白劝退(需要具备一定的python和transformers库的深度理解水平)</h3>
-<pre><code class="language-python">train_args = TrainingArguments(output_dir=&quot;./checkpoints&quot;,      # 输出文件夹
-                               per_device_train_batch_size=1,  # 训练时的batch_size
-                               gradient_accumulation_steps=32, #梯度累加
-                               gradient_checkpointing=True,    #使用Gradient Checkpoints
-                               per_device_eval_batch_size=1,  # 验证时的batch_size
-                               optim=&quot;adafactor&quot;,               #使用adafactor优化器
-                               num_train_epochs=1,
-                               logging_steps=10,                # log 打印的频率
-                               evaluation_strategy=&quot;epoch&quot;,     # 评估策略
-                               save_strategy=&quot;epoch&quot;,           # 保存策略
-                               save_total_limit=3,              # 输出文件夹中模型最大保存数
-                               learning_rate=2e-5,              # 学习率
-                               weight_decay=0.01,               # weight_decay
-                               metric_for_best_model=&quot;f1&quot;,      # 设定评估指标
-                               load_best_model_at_end=True)     # 训练完成后加载最优模型
-train_args
-</code></pre>
-<pre><code class="language-python">def process_function(examples):
-    tokenized_examples = tokenizer(examples[&quot;review&quot;], max_length=32, truncation=True, padding=&quot;max_length&quot;)
-    tokenized_examples[&quot;labels&quot;] = examples[&quot;label&quot;]
-    return tokenized_examples
-
-tokenized_datasets = datasets.map(process_function, batched=True, remove_columns=datasets[&quot;train&quot;].column_names)
-</code></pre>
+<p><div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">train_args</span> <span class="o">=</span> <span class="n">TrainingArguments</span><span class="p">(</span><span class="n">output_dir</span><span class="o">=</span><span class="s2">&quot;./checkpoints&quot;</span><span class="p">,</span>      <span class="c1"># 输出文件夹</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>                               <span class="n">per_device_train_batch_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>  <span class="c1"># 训练时的batch_size</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                               <span class="n">gradient_accumulation_steps</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="c1">#梯度累加</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>                               <span class="n">gradient_checkpointing</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>    <span class="c1">#使用Gradient Checkpoints</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>                               <span class="n">per_device_eval_batch_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>  <span class="c1"># 验证时的batch_size</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>                               <span class="n">optim</span><span class="o">=</span><span class="s2">&quot;adafactor&quot;</span><span class="p">,</span>               <span class="c1">#使用adafactor优化器</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                               <span class="n">num_train_epochs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                               <span class="n">logging_steps</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>                <span class="c1"># log 打印的频率</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                               <span class="n">evaluation_strategy</span><span class="o">=</span><span class="s2">&quot;epoch&quot;</span><span class="p">,</span>     <span class="c1"># 评估策略</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                               <span class="n">save_strategy</span><span class="o">=</span><span class="s2">&quot;epoch&quot;</span><span class="p">,</span>           <span class="c1"># 保存策略</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>                               <span class="n">save_total_limit</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>              <span class="c1"># 输出文件夹中模型最大保存数</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                               <span class="n">learning_rate</span><span class="o">=</span><span class="mf">2e-5</span><span class="p">,</span>              <span class="c1"># 学习率</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>                               <span class="n">weight_decay</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span>               <span class="c1"># weight_decay</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                               <span class="n">metric_for_best_model</span><span class="o">=</span><span class="s2">&quot;f1&quot;</span><span class="p">,</span>      <span class="c1"># 设定评估指标</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                               <span class="n">load_best_model_at_end</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>     <span class="c1"># 训练完成后加载最优模型</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">train_args</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span> <span class="nf">process_function</span><span class="p">(</span><span class="n">examples</span><span class="p">):</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">tokenized_examples</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="p">(</span><span class="n">examples</span><span class="p">[</span><span class="s2">&quot;review&quot;</span><span class="p">],</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">truncation</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">&quot;max_length&quot;</span><span class="p">)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;labels&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">examples</span><span class="p">[</span><span class="s2">&quot;label&quot;</span><span class="p">]</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="k">return</span> <span class="n">tokenized_examples</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">tokenized_datasets</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">process_function</span><span class="p">,</span> <span class="n">batched</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">remove_columns</span><span class="o">=</span><span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">column_names</span><span class="p">)</span>
+</span></code></pre></div></p>
 
 
 

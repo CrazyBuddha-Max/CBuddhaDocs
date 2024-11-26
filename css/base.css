@@ -2,14 +2,24 @@ body{
     background: url(../assets/CBuddhahub/905e75359796ce4dc0851bcffe880b61.jpg);
     background-size:100% 100%;
     background-attachment: fixed;
-    opacity: 1;
+    opacity: 0.96;
     
       
+}
+.md-grid {
+  max-width: 2160px; 
 }
 p {
     color: white;
   }
-  
+  @font-face {
+    font-family: 'Cbhub';
+    src:url('./taxuexunmiwenrou.ttf');
+    }
+    :root {
+      --md-text-font: "Cbhub"; 
+        --md-code-font: "Cbhub";
+    }
 [data-md-color-scheme="cbhub"] {
     /* Primary color shades */
     --md-primary-fg-color:               hsla(#{hex2hsl($clr-indigo-500)}, 1);

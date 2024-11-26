@@ -43,15 +43,7 @@
     
     
       
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Roboto Mono"}</style>
-      
     
-    
-      <link rel="stylesheet" href="../../css/extra.css">
     
       <link rel="stylesheet" href="../../css/base.css">
     
@@ -402,6 +394,35 @@
     
   
   RE领域
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../code/demo-nb/" class="md-tabs__link">
+          
+  
+    
+  
+  大数据分析与代码实现
 
         </a>
       </li>
@@ -2291,6 +2312,205 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    大数据分析与代码实现
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            大数据分析与代码实现
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Jupyter笔记本
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            Jupyter笔记本
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/demo-nb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupyter Notebook with cells
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python文件
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python文件
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/notebook/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupytext demo (.py)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2546,25 +2766,21 @@
 <ul>
 <li>声明式事务管理：基于AOP配置管理的，使用@Transactional注解，或者基于xml配置文件管理。
 <code>@Transactional</code>:用于业务层中的方法、类、接口上。将当前方法交给spring管理，spring会自动开启事务，提交事务，回滚事务。它提供了两个常见属性：rollbackFor和propagation。<blockquote>
-<p>@Transactional在默认情况下，只有出现RuntimeException才回滚异常。rollbackFor用于控制出现何种异常类型，回滚事务。</p>
-</blockquote>
-</li>
-</ul>
-<pre><code class="language-java">@Transactional(rollbackFor = Exception.class)
-</code></pre>
-<blockquote>
-<p>noRollbackFor用于控制出现何种异常类型，不回滚事务。</p>
-</blockquote>
-<pre><code class="language-java">@Transactional(noRollbackFor = Exception.class)
-</code></pre>
-<p>propagation属性：Spring控制事务传播行为(指的是当一个事务方法被另一个事务方法调用的时候，这个事务方法应该如何进行事务控制)的属性。</p>
-<pre><code class="language-java">@Transactional(propagation = Propagation.REQUIRED)
-</code></pre>
-<blockquote>
-<p>REQUIRED:默认值，表示当前方法必须运行在事务中，如果当前事务存在，方法会加入到当前事务中，如果当前事务不存在，则开启一个新的事务。
+<p>@Transactional在默认情况下，只有出现RuntimeException才回滚异常。rollbackFor用于控制出现何种异常类型，回滚事务。
+<div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nd">@Transactional</span><span class="p">(</span><span class="n">rollbackFor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Exception</span><span class="p">.</span><span class="na">class</span><span class="p">)</span>
+</span></code></pre></div>
+noRollbackFor用于控制出现何种异常类型，不回滚事务。
+<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nd">@Transactional</span><span class="p">(</span><span class="n">noRollbackFor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Exception</span><span class="p">.</span><span class="na">class</span><span class="p">)</span>
+</span></code></pre></div>
+propagation属性：Spring控制事务传播行为(指的是当一个事务方法被另一个事务方法调用的时候，这个事务方法应该如何进行事务控制)的属性。
+<div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nd">@Transactional</span><span class="p">(</span><span class="n">propagation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Propagation</span><span class="p">.</span><span class="na">REQUIRED</span><span class="p">)</span>
+</span></code></pre></div>
+REQUIRED:默认值，表示当前方法必须运行在事务中，如果当前事务存在，方法会加入到当前事务中，如果当前事务不存在，则开启一个新的事务。
 REQUIRES_NEW:表示当前方法必须运行在事务中，如果当前事务存在，则把当前事务挂起，创建一个新的事务，如果当前事务不存在，则开启一个新的事务。</p>
 <p><img alt="img" src="../../assets/CBuddhahub_springboot/3467365-20240803190638305-515541367.png" /></p>
 </blockquote>
+</li>
+</ul>
 <h2 id="aop">二、AOP面向切面编程</h2>
 <h3 id="1-aop">1. 什么是AOP</h3>
 <blockquote>
@@ -2583,41 +2799,37 @@ REQUIRES_NEW:表示当前方法必须运行在事务中，如果当前事务存�
 </blockquote>
 <h3 id="4aopspring">4.AOP在Spring中的实现</h3>
 <blockquote>
-<p>导入依赖：pom.xml文件中导入spring-aop的依赖。</p>
-</blockquote>
-<pre><code class="language-xml">&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-    &lt;artifactId&gt;spring-boot-starter-aop&lt;/artifactId&gt;
-&lt;/dependency&gt;
-</code></pre>
-<blockquote>
-<p>编写切面类：在切面类上添加@Aspect注解，表示该类是一个切面类。</p>
-</blockquote>
-<pre><code class="language-java">@Aspect //表明是一个aop类，不是普通类
-@Component
-public class MyAspect {
-    //前置通知 第一个*是指返回值为任意类型。第二个*表示任何类名，不限制具体的类。第三个*是指匹配任何方法名。(..) 表示匹配任何参数列表，即这些方法可以有任意数量和类型的参数。
-    @Before(&quot;execution(* com.example.demo.service.*.*(..))&quot;)//切入点表达式
-    public void before(){
-        System.out.println(&quot;前置通知&quot;);
-    }
-    //后置通知
-    @After(&quot;execution(* com.example.demo.service.UserService.*(..))&quot;)
-    public void after(){
-        System.out.println(&quot;后置通知&quot;);
-    }
-    //环绕通知
-    @Around(&quot;execution(* com.example.demo.service.UserService.*(..))&quot;)
-    public Object around(ProceedingJoinPoint joinPoint) throws Throwable {
-        System.out.println(&quot;环绕通知开始&quot;);
-        Object result = joinPoint.proceed();
-        System.out.println(&quot;环绕通知结束&quot;);
-        return result;
-    }
-}
-</code></pre>
-<blockquote>
-<p>execution表达式：execution(访问修饰符 返回值类型 包名.类名.方法名(参数列表))。
+<p>导入依赖：pom.xml文件中导入spring-aop的依赖。
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">&lt;dependency&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-aop<span class="nt">&lt;/artifactId&gt;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nt">&lt;/dependency&gt;</span>
+</span></code></pre></div>
+编写切面类：在切面类上添加@Aspect注解，表示该类是一个切面类。
+<div class="language-java highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nd">@Aspect</span><span class="w"> </span><span class="c1">//表明是一个aop类，不是普通类</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nd">@Component</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyAspect</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="c1">//前置通知 第一个*是指返回值为任意类型。第二个*表示任何类名，不限制具体的类。第三个*是指匹配任何方法名。(..) 表示匹配任何参数列表，即这些方法可以有任意数量和类型的参数。</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="nd">@Before</span><span class="p">(</span><span class="s">&quot;execution(* com.example.demo.service.*.*(..))&quot;</span><span class="p">)</span><span class="c1">//切入点表达式</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">before</span><span class="p">(){</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;前置通知&quot;</span><span class="p">);</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="c1">//后置通知</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="nd">@After</span><span class="p">(</span><span class="s">&quot;execution(* com.example.demo.service.UserService.*(..))&quot;</span><span class="p">)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">after</span><span class="p">(){</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;后置通知&quot;</span><span class="p">);</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span><span class="c1">//环绕通知</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">    </span><span class="nd">@Around</span><span class="p">(</span><span class="s">&quot;execution(* com.example.demo.service.UserService.*(..))&quot;</span><span class="p">)</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="nf">around</span><span class="p">(</span><span class="n">ProceedingJoinPoint</span><span class="w"> </span><span class="n">joinPoint</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Throwable</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;环绕通知开始&quot;</span><span class="p">);</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">        </span><span class="n">Object</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">joinPoint</span><span class="p">.</span><span class="na">proceed</span><span class="p">();</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;环绕通知结束&quot;</span><span class="p">);</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="p">}</span>
+</span></code></pre></div>
+execution表达式：execution(访问修饰符 返回值类型 包名.类名.方法名(参数列表))。
 @Before：前置通知，在目标方法执行之前执行。
 @After：后置通知，在目标方法执行之后执行。
 @Around：环绕通知，在目标方法执行之前和之后都执行。
@@ -2657,14 +2869,14 @@ public class MyAspect {
 <li>异常通知（AfterThrowing）：在目标方法执行之后，且抛出异常之后执行。</li>
 </ol>
 </blockquote>
-<p>@pointCut：将公共的切入点表达式抽取出来，使用@pointCut注解进行标记，在通知中引用该切入点表达式。</p>
-<pre><code class="language-java">@Pointcut(&quot;execution(* com.example.demo.service.*.*(..))&quot;)
-private void pointCut(){} //设置为public则其他切面类可以引用该切入点表达式
-@Before(&quot;pointCut()&quot;)
-public void before(){
-    System.out.println(&quot;前置通知&quot;);
-}
-</code></pre>
+<p>@pointCut：将公共的切入点表达式抽取出来，使用@pointCut注解进行标记，在通知中引用该切入点表达式。
+<div class="language-java highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nd">@Pointcut</span><span class="p">(</span><span class="s">&quot;execution(* com.example.demo.service.*.*(..))&quot;</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">pointCut</span><span class="p">(){}</span><span class="w"> </span><span class="c1">//设置为public则其他切面类可以引用该切入点表达式</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nd">@Before</span><span class="p">(</span><span class="s">&quot;pointCut()&quot;</span><span class="p">)</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">before</span><span class="p">(){</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;前置通知&quot;</span><span class="p">);</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
+</span></code></pre></div></p>
 <h5 id="522">5.2.2 通知顺序</h5>
 <p>当有多个切面的切入点匹配到目标方法，目标方法运行时，多个通知方法都会被执行。它们的执行顺序为：</p>
 <blockquote>
@@ -2682,35 +2894,35 @@ public void before(){
 <p>1.execution(目标方法访问修饰符? 返回值类型 包名.类名.?方法名(参数列表) throws 异常类型?)   根据方法的签名来匹配(问号前指定的内容可省略)。</p>
 <p>通配符：<code>*</code>:单个独立的任意符号，可以通配任意的返回值、包名、类名、方法名、任意类型的一个参数，也可以通配包、类、方法名的一部分。<code>..</code>:多个连续的任意符号，可以通配任意层级的包，任意类型、任意个数的参数（包括无参）。
 多个切入点表达式的连接：使用<code>||</code>连接。</p>
-<p>2.@annotation(......)：用于匹配标识有特定注的方法。对多个切入点表达式进行连接时简化代码。实现过程为自定义注解再引用注解。</p>
+<p>2.@annotation(......)：用于匹配标识有特定注的方法。对多个切入点表达式进行连接时简化代码。实现过程为自定义注解再引用注解。
+<div class="language-java highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nd">@Target</span><span class="p">(</span><span class="n">ElementType</span><span class="p">.</span><span class="na">METHOD</span><span class="p">)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nd">@Retention</span><span class="p">(</span><span class="n">RetentionPolicy</span><span class="p">.</span><span class="na">RUNTIME</span><span class="p">)</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kd">public</span><span class="w"> </span><span class="nd">@interface</span><span class="w"> </span><span class="n">MyAnnotation</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nd">@Aspect</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nd">@Component</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyAspect</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nd">@Before</span><span class="p">(</span><span class="s">&quot;@annotation(com.example.demo.aop.MyAnnotation)&quot;</span><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">before</span><span class="p">(){</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;前置通知&quot;</span><span class="p">);</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">}</span>
+</span></code></pre></div></p>
 </blockquote>
-<pre><code class="language-java">@Target(ElementType.METHOD)
-@Retention(RetentionPolicy.RUNTIME)
-public @interface MyAnnotation {
-}
-</code></pre>
-<pre><code class="language-java">@Aspect
-@Component
-public class MyAspect {
-    @Before(&quot;@annotation(com.example.demo.aop.MyAnnotation)&quot;)
-    public void before(){
-        System.out.println(&quot;前置通知&quot;);
-    }
-}
-</code></pre>
 <h5 id="524">5.2.4 连接点</h5>
 <p>在spring中用JoinPoint抽象了连接点，用它可以获取方法执行时的相关信息，如目标类名、方法名、参数列表等。
 对不同的通知类型获取的方式也不同：
 1.对@Around通知：获取连接点信息只能使用ProceedingJoinPoint，它继承了JoinPoint，并新增了proceed()方法。
-2.对@Before、@After、@AfterReturning、@AfterThrowing通知：获取连接点信息只能使用JoinPoint。</p>
-<pre><code class="language-java">@Around(&quot;execution(* com.example.demo.service.*.*(..))&quot;)
-public Object around(ProceedingJoinPoint joinPoint) throws Throwable {
-    System.out.println(&quot;环绕通知开始&quot;);
-    Object result = joinPoint.proceed();
-    System.out.println(&quot;环绕通知结束&quot;);
-    return result;
-}
-</code></pre>
+2.对@Before、@After、@AfterReturning、@AfterThrowing通知：获取连接点信息只能使用JoinPoint。
+<div class="language-java highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nd">@Around</span><span class="p">(</span><span class="s">&quot;execution(* com.example.demo.service.*.*(..))&quot;</span><span class="p">)</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kd">public</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="nf">around</span><span class="p">(</span><span class="n">ProceedingJoinPoint</span><span class="w"> </span><span class="n">joinPoint</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Throwable</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;环绕通知开始&quot;</span><span class="p">);</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="n">Object</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">joinPoint</span><span class="p">.</span><span class="na">proceed</span><span class="p">();</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;环绕通知结束&quot;</span><span class="p">);</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="p">}</span>
+</span></code></pre></div></p>
 
 
 

@@ -43,15 +43,7 @@
     
     
       
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Roboto Mono"}</style>
-      
     
-    
-      <link rel="stylesheet" href="../../../css/extra.css">
     
       <link rel="stylesheet" href="../../../css/base.css">
     
@@ -402,6 +394,35 @@
     
   
   RE领域
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../code/demo-nb/" class="md-tabs__link">
+          
+  
+    
+  
+  大数据分析与代码实现
 
         </a>
       </li>
@@ -2233,6 +2254,205 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    大数据分析与代码实现
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            大数据分析与代码实现
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Jupyter笔记本
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            Jupyter笔记本
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/demo-nb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupyter Notebook with cells
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python文件
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python文件
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../code/notebook/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupytext demo (.py)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2417,14 +2637,14 @@
 典型的MRC任务会涉及知识推理、语义关系理解等多个挑战，因此对于语言理解的深度要求较高。一些经典的MRC数据集测试集包括SQuAD、CoQA以及CMRC等。</li>
 </ul>
 <h3 id="_3">机器阅读理解数据集格式</h3>
-<pre><code class="language-json"># mcmrc2018数据集
-{
-  &quot;id&quot;: &quot;cmrc2018_train-00001&quot;,
-  &quot;text&quot;: &quot;近年来，中国的科技发展迅速，特别是在人工智能领域。例如，深度求索公司开发的AI模型在图像识别、语音识别等方面表现出色。&quot;,
-  &quot;question&quot;: &quot;深度求索是哪家公司？&quot;,
-  &quot;answers&quot;: [&quot;深度求索公司&quot;]
-}
-</code></pre>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="err">#</span><span class="w"> </span><span class="err">mcmrc</span><span class="mi">2018</span><span class="err">数据集</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cmrc2018_train-00001&quot;</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;近年来，中国的科技发展迅速，特别是在人工智能领域。例如，深度求索公司开发的AI模型在图像识别、语音识别等方面表现出色。&quot;</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;question&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;深度求索是哪家公司？&quot;</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">&quot;answers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;深度求索公司&quot;</span><span class="p">]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="_4">评估指标</h2>
 <ul>
 <li>精准匹配度(EM):计算预测结果与标准答案是否完全匹配。</li>
@@ -2468,338 +2688,333 @@
 </ul>
 <h2 id="_9">实现代码</h2>
 <h3 id="_10">方案一：</h3>
-<pre><code class="language-python">
-from datasets import load_dataset, DatasetDict
-from transformers import AutoTokenizer, AutoModelForQuestionAnswering, TrainingArguments, Trainer, DefaultDataCollator
-
-datasets = DatasetDict.load_from_disk(&quot;mrc_data&quot;)
-datasets
-
-datasets[&quot;train&quot;][0]
-
-tokenizer = AutoTokenizer.from_pretrained(&quot;hfl/chinese-macbert-base&quot;)
-tokenizer
-
-sample_dataset = datasets[&quot;train&quot;].select(range(10))
-
-tokenized_examples = tokenizer(text=sample_dataset[&quot;question&quot;],
-                               text_pair=sample_dataset[&quot;context&quot;],
-                               return_offsets_mapping=True,
-                               return_overflowing_tokens=True,
-                               stride=128,
-                               max_length=384, truncation=&quot;only_second&quot;, padding=&quot;max_length&quot;)
-tokenized_examples.keys()
-
-tokenized_examples[&quot;overflow_to_sample_mapping&quot;], len(tokenized_examples[&quot;overflow_to_sample_mapping&quot;])
-
-for sen in tokenizer.batch_decode(tokenized_examples[&quot;input_ids&quot;][:3]):
-    print(sen)
-
-print(tokenized_examples[&quot;offset_mapping&quot;][:3])
-
-print(tokenized_examples[&quot;offset_mapping&quot;][0], len(tokenized_examples[&quot;offset_mapping&quot;][0]))
-
-
-sample_mapping = tokenized_examples.pop(&quot;overflow_to_sample_mapping&quot;)
-
-for idx, _ in enumerate(sample_mapping):
-    answer = sample_dataset[&quot;answers&quot;][sample_mapping[idx]]
-    start_char = answer[&quot;answer_start&quot;][0]
-    end_char = start_char + len(answer[&quot;text&quot;][0])
-
-    context_start = tokenized_examples.sequence_ids(idx).index(1)
-    context_end = tokenized_examples.sequence_ids(idx).index(None, context_start) - 1
-
-    offset = tokenized_examples.get(&quot;offset_mapping&quot;)[idx]
-    example_ids = []
-
-    if offset[context_end][1] &lt; start_char or offset[context_start][0] &gt; end_char:
-        start_token_pos = 0
-        end_token_pos = 0
-    else:
-        token_id = context_start
-        while token_id &lt;= context_end and offset[token_id][0] &lt; start_char:
-            token_id += 1
-        start_token_pos = token_id
-        token_id = context_end
-        while token_id &gt;= context_start and offset[token_id][1] &gt; end_char:
-            token_id -=1
-        end_token_pos = token_id
-        example_ids.append([sample_mapping[idx]])
-
-    print(answer, start_char, end_char, context_start, context_end, start_token_pos, end_token_pos)
-    print(&quot;token answer decode:&quot;, tokenizer.decode(tokenized_examples[&quot;input_ids&quot;][idx][start_token_pos: end_token_pos + 1]))
-
-def process_func(examples):
-    tokenized_examples = tokenizer(text=examples[&quot;question&quot;],
-                               text_pair=examples[&quot;context&quot;],
-                               return_offsets_mapping=True,
-                               return_overflowing_tokens=True,
-                               stride=128,
-                               max_length=384, truncation=&quot;only_second&quot;, padding=&quot;max_length&quot;)
-    sample_mapping = tokenized_examples.pop(&quot;overflow_to_sample_mapping&quot;)
-    start_positions = []
-    end_positions = []
-    example_ids = []
-    for idx, _ in enumerate(sample_mapping):
-        answer = examples[&quot;answers&quot;][sample_mapping[idx]]
-        start_char = answer[&quot;answer_start&quot;][0]
-        end_char = start_char + len(answer[&quot;text&quot;][0])
-
-        context_start = tokenized_examples.sequence_ids(idx).index(1)
-        context_end = tokenized_examples.sequence_ids(idx).index(None, context_start) - 1
-        offset = tokenized_examples.get(&quot;offset_mapping&quot;)[idx]
-
-        if offset[context_end][1] &lt; start_char or offset[context_start][0] &gt; end_char:
-            start_token_pos = 0
-            end_token_pos = 0
-        else:
-            token_id = context_start
-            while token_id &lt;= context_end and offset[token_id][0] &lt; start_char:
-                token_id += 1
-            start_token_pos = token_id
-            token_id = context_end
-            while token_id &gt;= context_start and offset[token_id][1] &gt; end_char:
-                token_id -=1
-            end_token_pos = token_id
-        start_positions.append(start_token_pos)
-        end_positions.append(end_token_pos)
-        example_ids.append(examples[&quot;id&quot;][sample_mapping[idx]])
-        tokenized_examples[&quot;offset_mapping&quot;][idx] = [
-            (o if tokenized_examples.sequence_ids(idx)[k] == 1 else None)
-            for k, o in enumerate(tokenized_examples[&quot;offset_mapping&quot;][idx])
-        ]
-
-
-    tokenized_examples[&quot;example_ids&quot;] = example_ids
-    tokenized_examples[&quot;start_positions&quot;] = start_positions
-    tokenized_examples[&quot;end_positions&quot;] = end_positions
-    return tokenized_examples
-
-
-tokenied_datasets = datasets.map(process_func, batched=True, remove_columns=datasets[&quot;train&quot;].column_names)
-tokenied_datasets
-
-
-print(tokenied_datasets[&quot;train&quot;][&quot;offset_mapping&quot;][1])
-
-
-tokenied_datasets[&quot;train&quot;][&quot;example_ids&quot;][:10]
-
-
-import collections
-
-example_to_feature = collections.defaultdict(list)
-for idx, example_id in enumerate(tokenied_datasets[&quot;train&quot;][&quot;example_ids&quot;][:10]):
-    example_to_feature[example_id].append(idx)
-example_to_feature
-
-
-
-import numpy as np
-import collections
-
-def get_result(start_logits, end_logits, exmaples, features):
-
-    predictions = {}
-    references = {}
-
-
-    example_to_feature = collections.defaultdict(list)
-    for idx, example_id in enumerate(features[&quot;example_ids&quot;]):
-        example_to_feature[example_id].append(idx)
-
-
-    n_best = 20
-
-    max_answer_length = 30
-
-    for example in exmaples:
-        example_id = example[&quot;id&quot;]
-        context = example[&quot;context&quot;]
-        answers = []
-        for feature_idx in example_to_feature[example_id]:
-            start_logit = start_logits[feature_idx]
-            end_logit = end_logits[feature_idx]
-            offset = features[feature_idx][&quot;offset_mapping&quot;]
-            start_indexes = np.argsort(start_logit)[::-1][:n_best].tolist()
-            end_indexes = np.argsort(end_logit)[::-1][:n_best].tolist()
-            for start_index in start_indexes:
-                for end_index in end_indexes:
-                    if offset[start_index] is None or offset[end_index] is None:
-                        continue
-                    if end_index &lt; start_index or end_index - start_index + 1 &gt; max_answer_length:
-                        continue
-                    answers.append({
-                        &quot;text&quot;: context[offset[start_index][0]: offset[end_index][1]],
-                        &quot;score&quot;: start_logit[start_index] + end_logit[end_index]
-                    })
-        if len(answers) &gt; 0:
-            best_answer = max(answers, key=lambda x: x[&quot;score&quot;])
-            predictions[example_id] = best_answer[&quot;text&quot;]
-        else:
-            predictions[example_id] = &quot;&quot;
-        references[example_id] = example[&quot;answers&quot;][&quot;text&quot;]
-
-    return predictions, references
-
-
-
-
-from cmrc_eval import evaluate_cmrc
-
-def metirc(pred):
-    start_logits, end_logits = pred[0]
-    if start_logits.shape[0] == len(tokenied_datasets[&quot;validation&quot;]):
-        p, r = get_result(start_logits, end_logits, datasets[&quot;validation&quot;], tokenied_datasets[&quot;validation&quot;])
-    else:
-        p, r = get_result(start_logits, end_logits, datasets[&quot;test&quot;], tokenied_datasets[&quot;test&quot;])
-    return evaluate_cmrc(p, r)
-
-
-
-
-model = AutoModelForQuestionAnswering.from_pretrained(&quot;hfl/chinese-macbert-base&quot;)
-
-args = TrainingArguments(
-    output_dir=&quot;models_for_qa&quot;,
-    per_device_train_batch_size=32,
-    per_device_eval_batch_size=32,
-    eval_strategy=&quot;steps&quot;,
-    eval_steps=200,
-    save_strategy=&quot;epoch&quot;,
-    logging_steps=50,
-    num_train_epochs=1
-)
-
-trainer = Trainer(
-    model=model,
-    args=args,
-    tokenizer=tokenizer,
-    train_dataset=tokenied_datasets[&quot;train&quot;],
-    eval_dataset=tokenied_datasets[&quot;validation&quot;],
-    data_collator=DefaultDataCollator(),
-    compute_metrics=metirc
-)
-
-trainer.train()
-
-model.save_pretrained(&quot;save-model-solution2&quot;)
-
-</code></pre>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">datasets</span> <span class="kn">import</span> <span class="n">load_dataset</span><span class="p">,</span> <span class="n">DatasetDict</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span> <span class="nn">transformers</span> <span class="kn">import</span> <span class="n">AutoTokenizer</span><span class="p">,</span> <span class="n">AutoModelForQuestionAnswering</span><span class="p">,</span> <span class="n">TrainingArguments</span><span class="p">,</span> <span class="n">Trainer</span><span class="p">,</span> <span class="n">DefaultDataCollator</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">datasets</span> <span class="o">=</span> <span class="n">DatasetDict</span><span class="o">.</span><span class="n">load_from_disk</span><span class="p">(</span><span class="s2">&quot;mrc_data&quot;</span><span class="p">)</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">datasets</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">tokenizer</span> <span class="o">=</span> <span class="n">AutoTokenizer</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;hfl/chinese-macbert-base&quot;</span><span class="p">)</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">tokenizer</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">sample_dataset</span> <span class="o">=</span> <span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="n">tokenized_examples</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">sample_dataset</span><span class="p">[</span><span class="s2">&quot;question&quot;</span><span class="p">],</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>                               <span class="n">text_pair</span><span class="o">=</span><span class="n">sample_dataset</span><span class="p">[</span><span class="s2">&quot;context&quot;</span><span class="p">],</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>                               <span class="n">return_offsets_mapping</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>                               <span class="n">return_overflowing_tokens</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>                               <span class="n">stride</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>                               <span class="n">max_length</span><span class="o">=</span><span class="mi">384</span><span class="p">,</span> <span class="n">truncation</span><span class="o">=</span><span class="s2">&quot;only_second&quot;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">&quot;max_length&quot;</span><span class="p">)</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="n">tokenized_examples</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;overflow_to_sample_mapping&quot;</span><span class="p">],</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;overflow_to_sample_mapping&quot;</span><span class="p">])</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="k">for</span> <span class="n">sen</span> <span class="ow">in</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">batch_decode</span><span class="p">(</span><span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;input_ids&quot;</span><span class="p">][:</span><span class="mi">3</span><span class="p">]):</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">sen</span><span class="p">)</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="nb">print</span><span class="p">(</span><span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">][:</span><span class="mi">3</span><span class="p">])</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="nb">print</span><span class="p">(</span><span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="n">sample_mapping</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;overflow_to_sample_mapping&quot;</span><span class="p">)</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sample_mapping</span><span class="p">):</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>    <span class="n">answer</span> <span class="o">=</span> <span class="n">sample_dataset</span><span class="p">[</span><span class="s2">&quot;answers&quot;</span><span class="p">][</span><span class="n">sample_mapping</span><span class="p">[</span><span class="n">idx</span><span class="p">]]</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>    <span class="n">start_char</span> <span class="o">=</span> <span class="n">answer</span><span class="p">[</span><span class="s2">&quot;answer_start&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>    <span class="n">end_char</span> <span class="o">=</span> <span class="n">start_char</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">answer</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>    <span class="n">context_start</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">sequence_ids</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>    <span class="n">context_end</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">sequence_ids</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">context_start</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>    <span class="n">offset</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">)[</span><span class="n">idx</span><span class="p">]</span>
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>    <span class="n">example_ids</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>
+</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>    <span class="k">if</span> <span class="n">offset</span><span class="p">[</span><span class="n">context_end</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">start_char</span> <span class="ow">or</span> <span class="n">offset</span><span class="p">[</span><span class="n">context_start</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">end_char</span><span class="p">:</span>
+</span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a>        <span class="n">start_token_pos</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a>        <span class="n">end_token_pos</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-1-48"><a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>        <span class="n">token_id</span> <span class="o">=</span> <span class="n">context_start</span>
+</span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a>        <span class="k">while</span> <span class="n">token_id</span> <span class="o">&lt;=</span> <span class="n">context_end</span> <span class="ow">and</span> <span class="n">offset</span><span class="p">[</span><span class="n">token_id</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">start_char</span><span class="p">:</span>
+</span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a>            <span class="n">token_id</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-1-52"><a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>        <span class="n">start_token_pos</span> <span class="o">=</span> <span class="n">token_id</span>
+</span><span id="__span-1-53"><a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>        <span class="n">token_id</span> <span class="o">=</span> <span class="n">context_end</span>
+</span><span id="__span-1-54"><a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>        <span class="k">while</span> <span class="n">token_id</span> <span class="o">&gt;=</span> <span class="n">context_start</span> <span class="ow">and</span> <span class="n">offset</span><span class="p">[</span><span class="n">token_id</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">end_char</span><span class="p">:</span>
+</span><span id="__span-1-55"><a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a>            <span class="n">token_id</span> <span class="o">-=</span><span class="mi">1</span>
+</span><span id="__span-1-56"><a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a>        <span class="n">end_token_pos</span> <span class="o">=</span> <span class="n">token_id</span>
+</span><span id="__span-1-57"><a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a>        <span class="n">example_ids</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">sample_mapping</span><span class="p">[</span><span class="n">idx</span><span class="p">]])</span>
+</span><span id="__span-1-58"><a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a>
+</span><span id="__span-1-59"><a id="__codelineno-1-59" name="__codelineno-1-59" href="#__codelineno-1-59"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">,</span> <span class="n">start_char</span><span class="p">,</span> <span class="n">end_char</span><span class="p">,</span> <span class="n">context_start</span><span class="p">,</span> <span class="n">context_end</span><span class="p">,</span> <span class="n">start_token_pos</span><span class="p">,</span> <span class="n">end_token_pos</span><span class="p">)</span>
+</span><span id="__span-1-60"><a id="__codelineno-1-60" name="__codelineno-1-60" href="#__codelineno-1-60"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;token answer decode:&quot;</span><span class="p">,</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;input_ids&quot;</span><span class="p">][</span><span class="n">idx</span><span class="p">][</span><span class="n">start_token_pos</span><span class="p">:</span> <span class="n">end_token_pos</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]))</span>
+</span><span id="__span-1-61"><a id="__codelineno-1-61" name="__codelineno-1-61" href="#__codelineno-1-61"></a>
+</span><span id="__span-1-62"><a id="__codelineno-1-62" name="__codelineno-1-62" href="#__codelineno-1-62"></a><span class="k">def</span> <span class="nf">process_func</span><span class="p">(</span><span class="n">examples</span><span class="p">):</span>
+</span><span id="__span-1-63"><a id="__codelineno-1-63" name="__codelineno-1-63" href="#__codelineno-1-63"></a>    <span class="n">tokenized_examples</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">examples</span><span class="p">[</span><span class="s2">&quot;question&quot;</span><span class="p">],</span>
+</span><span id="__span-1-64"><a id="__codelineno-1-64" name="__codelineno-1-64" href="#__codelineno-1-64"></a>                               <span class="n">text_pair</span><span class="o">=</span><span class="n">examples</span><span class="p">[</span><span class="s2">&quot;context&quot;</span><span class="p">],</span>
+</span><span id="__span-1-65"><a id="__codelineno-1-65" name="__codelineno-1-65" href="#__codelineno-1-65"></a>                               <span class="n">return_offsets_mapping</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-1-66"><a id="__codelineno-1-66" name="__codelineno-1-66" href="#__codelineno-1-66"></a>                               <span class="n">return_overflowing_tokens</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-1-67"><a id="__codelineno-1-67" name="__codelineno-1-67" href="#__codelineno-1-67"></a>                               <span class="n">stride</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span>
+</span><span id="__span-1-68"><a id="__codelineno-1-68" name="__codelineno-1-68" href="#__codelineno-1-68"></a>                               <span class="n">max_length</span><span class="o">=</span><span class="mi">384</span><span class="p">,</span> <span class="n">truncation</span><span class="o">=</span><span class="s2">&quot;only_second&quot;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">&quot;max_length&quot;</span><span class="p">)</span>
+</span><span id="__span-1-69"><a id="__codelineno-1-69" name="__codelineno-1-69" href="#__codelineno-1-69"></a>    <span class="n">sample_mapping</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;overflow_to_sample_mapping&quot;</span><span class="p">)</span>
+</span><span id="__span-1-70"><a id="__codelineno-1-70" name="__codelineno-1-70" href="#__codelineno-1-70"></a>    <span class="n">start_positions</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-1-71"><a id="__codelineno-1-71" name="__codelineno-1-71" href="#__codelineno-1-71"></a>    <span class="n">end_positions</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-1-72"><a id="__codelineno-1-72" name="__codelineno-1-72" href="#__codelineno-1-72"></a>    <span class="n">example_ids</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-1-73"><a id="__codelineno-1-73" name="__codelineno-1-73" href="#__codelineno-1-73"></a>    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sample_mapping</span><span class="p">):</span>
+</span><span id="__span-1-74"><a id="__codelineno-1-74" name="__codelineno-1-74" href="#__codelineno-1-74"></a>        <span class="n">answer</span> <span class="o">=</span> <span class="n">examples</span><span class="p">[</span><span class="s2">&quot;answers&quot;</span><span class="p">][</span><span class="n">sample_mapping</span><span class="p">[</span><span class="n">idx</span><span class="p">]]</span>
+</span><span id="__span-1-75"><a id="__codelineno-1-75" name="__codelineno-1-75" href="#__codelineno-1-75"></a>        <span class="n">start_char</span> <span class="o">=</span> <span class="n">answer</span><span class="p">[</span><span class="s2">&quot;answer_start&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-1-76"><a id="__codelineno-1-76" name="__codelineno-1-76" href="#__codelineno-1-76"></a>        <span class="n">end_char</span> <span class="o">=</span> <span class="n">start_char</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">answer</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-1-77"><a id="__codelineno-1-77" name="__codelineno-1-77" href="#__codelineno-1-77"></a>
+</span><span id="__span-1-78"><a id="__codelineno-1-78" name="__codelineno-1-78" href="#__codelineno-1-78"></a>        <span class="n">context_start</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">sequence_ids</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-1-79"><a id="__codelineno-1-79" name="__codelineno-1-79" href="#__codelineno-1-79"></a>        <span class="n">context_end</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">sequence_ids</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">context_start</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-1-80"><a id="__codelineno-1-80" name="__codelineno-1-80" href="#__codelineno-1-80"></a>        <span class="n">offset</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">)[</span><span class="n">idx</span><span class="p">]</span>
+</span><span id="__span-1-81"><a id="__codelineno-1-81" name="__codelineno-1-81" href="#__codelineno-1-81"></a>
+</span><span id="__span-1-82"><a id="__codelineno-1-82" name="__codelineno-1-82" href="#__codelineno-1-82"></a>        <span class="k">if</span> <span class="n">offset</span><span class="p">[</span><span class="n">context_end</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">start_char</span> <span class="ow">or</span> <span class="n">offset</span><span class="p">[</span><span class="n">context_start</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">end_char</span><span class="p">:</span>
+</span><span id="__span-1-83"><a id="__codelineno-1-83" name="__codelineno-1-83" href="#__codelineno-1-83"></a>            <span class="n">start_token_pos</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-1-84"><a id="__codelineno-1-84" name="__codelineno-1-84" href="#__codelineno-1-84"></a>            <span class="n">end_token_pos</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-1-85"><a id="__codelineno-1-85" name="__codelineno-1-85" href="#__codelineno-1-85"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-1-86"><a id="__codelineno-1-86" name="__codelineno-1-86" href="#__codelineno-1-86"></a>            <span class="n">token_id</span> <span class="o">=</span> <span class="n">context_start</span>
+</span><span id="__span-1-87"><a id="__codelineno-1-87" name="__codelineno-1-87" href="#__codelineno-1-87"></a>            <span class="k">while</span> <span class="n">token_id</span> <span class="o">&lt;=</span> <span class="n">context_end</span> <span class="ow">and</span> <span class="n">offset</span><span class="p">[</span><span class="n">token_id</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">start_char</span><span class="p">:</span>
+</span><span id="__span-1-88"><a id="__codelineno-1-88" name="__codelineno-1-88" href="#__codelineno-1-88"></a>                <span class="n">token_id</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-1-89"><a id="__codelineno-1-89" name="__codelineno-1-89" href="#__codelineno-1-89"></a>            <span class="n">start_token_pos</span> <span class="o">=</span> <span class="n">token_id</span>
+</span><span id="__span-1-90"><a id="__codelineno-1-90" name="__codelineno-1-90" href="#__codelineno-1-90"></a>            <span class="n">token_id</span> <span class="o">=</span> <span class="n">context_end</span>
+</span><span id="__span-1-91"><a id="__codelineno-1-91" name="__codelineno-1-91" href="#__codelineno-1-91"></a>            <span class="k">while</span> <span class="n">token_id</span> <span class="o">&gt;=</span> <span class="n">context_start</span> <span class="ow">and</span> <span class="n">offset</span><span class="p">[</span><span class="n">token_id</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">end_char</span><span class="p">:</span>
+</span><span id="__span-1-92"><a id="__codelineno-1-92" name="__codelineno-1-92" href="#__codelineno-1-92"></a>                <span class="n">token_id</span> <span class="o">-=</span><span class="mi">1</span>
+</span><span id="__span-1-93"><a id="__codelineno-1-93" name="__codelineno-1-93" href="#__codelineno-1-93"></a>            <span class="n">end_token_pos</span> <span class="o">=</span> <span class="n">token_id</span>
+</span><span id="__span-1-94"><a id="__codelineno-1-94" name="__codelineno-1-94" href="#__codelineno-1-94"></a>        <span class="n">start_positions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">start_token_pos</span><span class="p">)</span>
+</span><span id="__span-1-95"><a id="__codelineno-1-95" name="__codelineno-1-95" href="#__codelineno-1-95"></a>        <span class="n">end_positions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">end_token_pos</span><span class="p">)</span>
+</span><span id="__span-1-96"><a id="__codelineno-1-96" name="__codelineno-1-96" href="#__codelineno-1-96"></a>        <span class="n">example_ids</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">examples</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">][</span><span class="n">sample_mapping</span><span class="p">[</span><span class="n">idx</span><span class="p">]])</span>
+</span><span id="__span-1-97"><a id="__codelineno-1-97" name="__codelineno-1-97" href="#__codelineno-1-97"></a>        <span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">][</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-1-98"><a id="__codelineno-1-98" name="__codelineno-1-98" href="#__codelineno-1-98"></a>            <span class="p">(</span><span class="n">o</span> <span class="k">if</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">sequence_ids</span><span class="p">(</span><span class="n">idx</span><span class="p">)[</span><span class="n">k</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="kc">None</span><span class="p">)</span>
+</span><span id="__span-1-99"><a id="__codelineno-1-99" name="__codelineno-1-99" href="#__codelineno-1-99"></a>            <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">o</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">][</span><span class="n">idx</span><span class="p">])</span>
+</span><span id="__span-1-100"><a id="__codelineno-1-100" name="__codelineno-1-100" href="#__codelineno-1-100"></a>        <span class="p">]</span>
+</span><span id="__span-1-101"><a id="__codelineno-1-101" name="__codelineno-1-101" href="#__codelineno-1-101"></a>
+</span><span id="__span-1-102"><a id="__codelineno-1-102" name="__codelineno-1-102" href="#__codelineno-1-102"></a>
+</span><span id="__span-1-103"><a id="__codelineno-1-103" name="__codelineno-1-103" href="#__codelineno-1-103"></a>    <span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;example_ids&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">example_ids</span>
+</span><span id="__span-1-104"><a id="__codelineno-1-104" name="__codelineno-1-104" href="#__codelineno-1-104"></a>    <span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;start_positions&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">start_positions</span>
+</span><span id="__span-1-105"><a id="__codelineno-1-105" name="__codelineno-1-105" href="#__codelineno-1-105"></a>    <span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;end_positions&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">end_positions</span>
+</span><span id="__span-1-106"><a id="__codelineno-1-106" name="__codelineno-1-106" href="#__codelineno-1-106"></a>    <span class="k">return</span> <span class="n">tokenized_examples</span>
+</span><span id="__span-1-107"><a id="__codelineno-1-107" name="__codelineno-1-107" href="#__codelineno-1-107"></a>
+</span><span id="__span-1-108"><a id="__codelineno-1-108" name="__codelineno-1-108" href="#__codelineno-1-108"></a>
+</span><span id="__span-1-109"><a id="__codelineno-1-109" name="__codelineno-1-109" href="#__codelineno-1-109"></a><span class="n">tokenied_datasets</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">process_func</span><span class="p">,</span> <span class="n">batched</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">remove_columns</span><span class="o">=</span><span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">column_names</span><span class="p">)</span>
+</span><span id="__span-1-110"><a id="__codelineno-1-110" name="__codelineno-1-110" href="#__codelineno-1-110"></a><span class="n">tokenied_datasets</span>
+</span><span id="__span-1-111"><a id="__codelineno-1-111" name="__codelineno-1-111" href="#__codelineno-1-111"></a>
+</span><span id="__span-1-112"><a id="__codelineno-1-112" name="__codelineno-1-112" href="#__codelineno-1-112"></a>
+</span><span id="__span-1-113"><a id="__codelineno-1-113" name="__codelineno-1-113" href="#__codelineno-1-113"></a><span class="nb">print</span><span class="p">(</span><span class="n">tokenied_datasets</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">][</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+</span><span id="__span-1-114"><a id="__codelineno-1-114" name="__codelineno-1-114" href="#__codelineno-1-114"></a>
+</span><span id="__span-1-115"><a id="__codelineno-1-115" name="__codelineno-1-115" href="#__codelineno-1-115"></a>
+</span><span id="__span-1-116"><a id="__codelineno-1-116" name="__codelineno-1-116" href="#__codelineno-1-116"></a><span class="n">tokenied_datasets</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">][</span><span class="s2">&quot;example_ids&quot;</span><span class="p">][:</span><span class="mi">10</span><span class="p">]</span>
+</span><span id="__span-1-117"><a id="__codelineno-1-117" name="__codelineno-1-117" href="#__codelineno-1-117"></a>
+</span><span id="__span-1-118"><a id="__codelineno-1-118" name="__codelineno-1-118" href="#__codelineno-1-118"></a>
+</span><span id="__span-1-119"><a id="__codelineno-1-119" name="__codelineno-1-119" href="#__codelineno-1-119"></a><span class="kn">import</span> <span class="nn">collections</span>
+</span><span id="__span-1-120"><a id="__codelineno-1-120" name="__codelineno-1-120" href="#__codelineno-1-120"></a>
+</span><span id="__span-1-121"><a id="__codelineno-1-121" name="__codelineno-1-121" href="#__codelineno-1-121"></a><span class="n">example_to_feature</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+</span><span id="__span-1-122"><a id="__codelineno-1-122" name="__codelineno-1-122" href="#__codelineno-1-122"></a><span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">example_id</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tokenied_datasets</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">][</span><span class="s2">&quot;example_ids&quot;</span><span class="p">][:</span><span class="mi">10</span><span class="p">]):</span>
+</span><span id="__span-1-123"><a id="__codelineno-1-123" name="__codelineno-1-123" href="#__codelineno-1-123"></a>    <span class="n">example_to_feature</span><span class="p">[</span><span class="n">example_id</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
+</span><span id="__span-1-124"><a id="__codelineno-1-124" name="__codelineno-1-124" href="#__codelineno-1-124"></a><span class="n">example_to_feature</span>
+</span><span id="__span-1-125"><a id="__codelineno-1-125" name="__codelineno-1-125" href="#__codelineno-1-125"></a>
+</span><span id="__span-1-126"><a id="__codelineno-1-126" name="__codelineno-1-126" href="#__codelineno-1-126"></a>
+</span><span id="__span-1-127"><a id="__codelineno-1-127" name="__codelineno-1-127" href="#__codelineno-1-127"></a>
+</span><span id="__span-1-128"><a id="__codelineno-1-128" name="__codelineno-1-128" href="#__codelineno-1-128"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span><span id="__span-1-129"><a id="__codelineno-1-129" name="__codelineno-1-129" href="#__codelineno-1-129"></a><span class="kn">import</span> <span class="nn">collections</span>
+</span><span id="__span-1-130"><a id="__codelineno-1-130" name="__codelineno-1-130" href="#__codelineno-1-130"></a>
+</span><span id="__span-1-131"><a id="__codelineno-1-131" name="__codelineno-1-131" href="#__codelineno-1-131"></a><span class="k">def</span> <span class="nf">get_result</span><span class="p">(</span><span class="n">start_logits</span><span class="p">,</span> <span class="n">end_logits</span><span class="p">,</span> <span class="n">exmaples</span><span class="p">,</span> <span class="n">features</span><span class="p">):</span>
+</span><span id="__span-1-132"><a id="__codelineno-1-132" name="__codelineno-1-132" href="#__codelineno-1-132"></a>
+</span><span id="__span-1-133"><a id="__codelineno-1-133" name="__codelineno-1-133" href="#__codelineno-1-133"></a>    <span class="n">predictions</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="__span-1-134"><a id="__codelineno-1-134" name="__codelineno-1-134" href="#__codelineno-1-134"></a>    <span class="n">references</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="__span-1-135"><a id="__codelineno-1-135" name="__codelineno-1-135" href="#__codelineno-1-135"></a>
+</span><span id="__span-1-136"><a id="__codelineno-1-136" name="__codelineno-1-136" href="#__codelineno-1-136"></a>
+</span><span id="__span-1-137"><a id="__codelineno-1-137" name="__codelineno-1-137" href="#__codelineno-1-137"></a>    <span class="n">example_to_feature</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+</span><span id="__span-1-138"><a id="__codelineno-1-138" name="__codelineno-1-138" href="#__codelineno-1-138"></a>    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">example_id</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="s2">&quot;example_ids&quot;</span><span class="p">]):</span>
+</span><span id="__span-1-139"><a id="__codelineno-1-139" name="__codelineno-1-139" href="#__codelineno-1-139"></a>        <span class="n">example_to_feature</span><span class="p">[</span><span class="n">example_id</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
+</span><span id="__span-1-140"><a id="__codelineno-1-140" name="__codelineno-1-140" href="#__codelineno-1-140"></a>
+</span><span id="__span-1-141"><a id="__codelineno-1-141" name="__codelineno-1-141" href="#__codelineno-1-141"></a>
+</span><span id="__span-1-142"><a id="__codelineno-1-142" name="__codelineno-1-142" href="#__codelineno-1-142"></a>    <span class="n">n_best</span> <span class="o">=</span> <span class="mi">20</span>
+</span><span id="__span-1-143"><a id="__codelineno-1-143" name="__codelineno-1-143" href="#__codelineno-1-143"></a>
+</span><span id="__span-1-144"><a id="__codelineno-1-144" name="__codelineno-1-144" href="#__codelineno-1-144"></a>    <span class="n">max_answer_length</span> <span class="o">=</span> <span class="mi">30</span>
+</span><span id="__span-1-145"><a id="__codelineno-1-145" name="__codelineno-1-145" href="#__codelineno-1-145"></a>
+</span><span id="__span-1-146"><a id="__codelineno-1-146" name="__codelineno-1-146" href="#__codelineno-1-146"></a>    <span class="k">for</span> <span class="n">example</span> <span class="ow">in</span> <span class="n">exmaples</span><span class="p">:</span>
+</span><span id="__span-1-147"><a id="__codelineno-1-147" name="__codelineno-1-147" href="#__codelineno-1-147"></a>        <span class="n">example_id</span> <span class="o">=</span> <span class="n">example</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">]</span>
+</span><span id="__span-1-148"><a id="__codelineno-1-148" name="__codelineno-1-148" href="#__codelineno-1-148"></a>        <span class="n">context</span> <span class="o">=</span> <span class="n">example</span><span class="p">[</span><span class="s2">&quot;context&quot;</span><span class="p">]</span>
+</span><span id="__span-1-149"><a id="__codelineno-1-149" name="__codelineno-1-149" href="#__codelineno-1-149"></a>        <span class="n">answers</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-1-150"><a id="__codelineno-1-150" name="__codelineno-1-150" href="#__codelineno-1-150"></a>        <span class="k">for</span> <span class="n">feature_idx</span> <span class="ow">in</span> <span class="n">example_to_feature</span><span class="p">[</span><span class="n">example_id</span><span class="p">]:</span>
+</span><span id="__span-1-151"><a id="__codelineno-1-151" name="__codelineno-1-151" href="#__codelineno-1-151"></a>            <span class="n">start_logit</span> <span class="o">=</span> <span class="n">start_logits</span><span class="p">[</span><span class="n">feature_idx</span><span class="p">]</span>
+</span><span id="__span-1-152"><a id="__codelineno-1-152" name="__codelineno-1-152" href="#__codelineno-1-152"></a>            <span class="n">end_logit</span> <span class="o">=</span> <span class="n">end_logits</span><span class="p">[</span><span class="n">feature_idx</span><span class="p">]</span>
+</span><span id="__span-1-153"><a id="__codelineno-1-153" name="__codelineno-1-153" href="#__codelineno-1-153"></a>            <span class="n">offset</span> <span class="o">=</span> <span class="n">features</span><span class="p">[</span><span class="n">feature_idx</span><span class="p">][</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">]</span>
+</span><span id="__span-1-154"><a id="__codelineno-1-154" name="__codelineno-1-154" href="#__codelineno-1-154"></a>            <span class="n">start_indexes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">start_logit</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">][:</span><span class="n">n_best</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</span><span id="__span-1-155"><a id="__codelineno-1-155" name="__codelineno-1-155" href="#__codelineno-1-155"></a>            <span class="n">end_indexes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">end_logit</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">][:</span><span class="n">n_best</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</span><span id="__span-1-156"><a id="__codelineno-1-156" name="__codelineno-1-156" href="#__codelineno-1-156"></a>            <span class="k">for</span> <span class="n">start_index</span> <span class="ow">in</span> <span class="n">start_indexes</span><span class="p">:</span>
+</span><span id="__span-1-157"><a id="__codelineno-1-157" name="__codelineno-1-157" href="#__codelineno-1-157"></a>                <span class="k">for</span> <span class="n">end_index</span> <span class="ow">in</span> <span class="n">end_indexes</span><span class="p">:</span>
+</span><span id="__span-1-158"><a id="__codelineno-1-158" name="__codelineno-1-158" href="#__codelineno-1-158"></a>                    <span class="k">if</span> <span class="n">offset</span><span class="p">[</span><span class="n">start_index</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">offset</span><span class="p">[</span><span class="n">end_index</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-1-159"><a id="__codelineno-1-159" name="__codelineno-1-159" href="#__codelineno-1-159"></a>                        <span class="k">continue</span>
+</span><span id="__span-1-160"><a id="__codelineno-1-160" name="__codelineno-1-160" href="#__codelineno-1-160"></a>                    <span class="k">if</span> <span class="n">end_index</span> <span class="o">&lt;</span> <span class="n">start_index</span> <span class="ow">or</span> <span class="n">end_index</span> <span class="o">-</span> <span class="n">start_index</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="n">max_answer_length</span><span class="p">:</span>
+</span><span id="__span-1-161"><a id="__codelineno-1-161" name="__codelineno-1-161" href="#__codelineno-1-161"></a>                        <span class="k">continue</span>
+</span><span id="__span-1-162"><a id="__codelineno-1-162" name="__codelineno-1-162" href="#__codelineno-1-162"></a>                    <span class="n">answers</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+</span><span id="__span-1-163"><a id="__codelineno-1-163" name="__codelineno-1-163" href="#__codelineno-1-163"></a>                        <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="n">context</span><span class="p">[</span><span class="n">offset</span><span class="p">[</span><span class="n">start_index</span><span class="p">][</span><span class="mi">0</span><span class="p">]:</span> <span class="n">offset</span><span class="p">[</span><span class="n">end_index</span><span class="p">][</span><span class="mi">1</span><span class="p">]],</span>
+</span><span id="__span-1-164"><a id="__codelineno-1-164" name="__codelineno-1-164" href="#__codelineno-1-164"></a>                        <span class="s2">&quot;score&quot;</span><span class="p">:</span> <span class="n">start_logit</span><span class="p">[</span><span class="n">start_index</span><span class="p">]</span> <span class="o">+</span> <span class="n">end_logit</span><span class="p">[</span><span class="n">end_index</span><span class="p">]</span>
+</span><span id="__span-1-165"><a id="__codelineno-1-165" name="__codelineno-1-165" href="#__codelineno-1-165"></a>                    <span class="p">})</span>
+</span><span id="__span-1-166"><a id="__codelineno-1-166" name="__codelineno-1-166" href="#__codelineno-1-166"></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">answers</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-1-167"><a id="__codelineno-1-167" name="__codelineno-1-167" href="#__codelineno-1-167"></a>            <span class="n">best_answer</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">answers</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s2">&quot;score&quot;</span><span class="p">])</span>
+</span><span id="__span-1-168"><a id="__codelineno-1-168" name="__codelineno-1-168" href="#__codelineno-1-168"></a>            <span class="n">predictions</span><span class="p">[</span><span class="n">example_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">best_answer</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">]</span>
+</span><span id="__span-1-169"><a id="__codelineno-1-169" name="__codelineno-1-169" href="#__codelineno-1-169"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-1-170"><a id="__codelineno-1-170" name="__codelineno-1-170" href="#__codelineno-1-170"></a>            <span class="n">predictions</span><span class="p">[</span><span class="n">example_id</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span id="__span-1-171"><a id="__codelineno-1-171" name="__codelineno-1-171" href="#__codelineno-1-171"></a>        <span class="n">references</span><span class="p">[</span><span class="n">example_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">example</span><span class="p">[</span><span class="s2">&quot;answers&quot;</span><span class="p">][</span><span class="s2">&quot;text&quot;</span><span class="p">]</span>
+</span><span id="__span-1-172"><a id="__codelineno-1-172" name="__codelineno-1-172" href="#__codelineno-1-172"></a>
+</span><span id="__span-1-173"><a id="__codelineno-1-173" name="__codelineno-1-173" href="#__codelineno-1-173"></a>    <span class="k">return</span> <span class="n">predictions</span><span class="p">,</span> <span class="n">references</span>
+</span><span id="__span-1-174"><a id="__codelineno-1-174" name="__codelineno-1-174" href="#__codelineno-1-174"></a>
+</span><span id="__span-1-175"><a id="__codelineno-1-175" name="__codelineno-1-175" href="#__codelineno-1-175"></a>
+</span><span id="__span-1-176"><a id="__codelineno-1-176" name="__codelineno-1-176" href="#__codelineno-1-176"></a>
+</span><span id="__span-1-177"><a id="__codelineno-1-177" name="__codelineno-1-177" href="#__codelineno-1-177"></a>
+</span><span id="__span-1-178"><a id="__codelineno-1-178" name="__codelineno-1-178" href="#__codelineno-1-178"></a><span class="kn">from</span> <span class="nn">cmrc_eval</span> <span class="kn">import</span> <span class="n">evaluate_cmrc</span>
+</span><span id="__span-1-179"><a id="__codelineno-1-179" name="__codelineno-1-179" href="#__codelineno-1-179"></a>
+</span><span id="__span-1-180"><a id="__codelineno-1-180" name="__codelineno-1-180" href="#__codelineno-1-180"></a><span class="k">def</span> <span class="nf">metirc</span><span class="p">(</span><span class="n">pred</span><span class="p">):</span>
+</span><span id="__span-1-181"><a id="__codelineno-1-181" name="__codelineno-1-181" href="#__codelineno-1-181"></a>    <span class="n">start_logits</span><span class="p">,</span> <span class="n">end_logits</span> <span class="o">=</span> <span class="n">pred</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-1-182"><a id="__codelineno-1-182" name="__codelineno-1-182" href="#__codelineno-1-182"></a>    <span class="k">if</span> <span class="n">start_logits</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokenied_datasets</span><span class="p">[</span><span class="s2">&quot;validation&quot;</span><span class="p">]):</span>
+</span><span id="__span-1-183"><a id="__codelineno-1-183" name="__codelineno-1-183" href="#__codelineno-1-183"></a>        <span class="n">p</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">get_result</span><span class="p">(</span><span class="n">start_logits</span><span class="p">,</span> <span class="n">end_logits</span><span class="p">,</span> <span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;validation&quot;</span><span class="p">],</span> <span class="n">tokenied_datasets</span><span class="p">[</span><span class="s2">&quot;validation&quot;</span><span class="p">])</span>
+</span><span id="__span-1-184"><a id="__codelineno-1-184" name="__codelineno-1-184" href="#__codelineno-1-184"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-1-185"><a id="__codelineno-1-185" name="__codelineno-1-185" href="#__codelineno-1-185"></a>        <span class="n">p</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">get_result</span><span class="p">(</span><span class="n">start_logits</span><span class="p">,</span> <span class="n">end_logits</span><span class="p">,</span> <span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">],</span> <span class="n">tokenied_datasets</span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">])</span>
+</span><span id="__span-1-186"><a id="__codelineno-1-186" name="__codelineno-1-186" href="#__codelineno-1-186"></a>    <span class="k">return</span> <span class="n">evaluate_cmrc</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+</span><span id="__span-1-187"><a id="__codelineno-1-187" name="__codelineno-1-187" href="#__codelineno-1-187"></a>
+</span><span id="__span-1-188"><a id="__codelineno-1-188" name="__codelineno-1-188" href="#__codelineno-1-188"></a>
+</span><span id="__span-1-189"><a id="__codelineno-1-189" name="__codelineno-1-189" href="#__codelineno-1-189"></a>
+</span><span id="__span-1-190"><a id="__codelineno-1-190" name="__codelineno-1-190" href="#__codelineno-1-190"></a>
+</span><span id="__span-1-191"><a id="__codelineno-1-191" name="__codelineno-1-191" href="#__codelineno-1-191"></a><span class="n">model</span> <span class="o">=</span> <span class="n">AutoModelForQuestionAnswering</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;hfl/chinese-macbert-base&quot;</span><span class="p">)</span>
+</span><span id="__span-1-192"><a id="__codelineno-1-192" name="__codelineno-1-192" href="#__codelineno-1-192"></a>
+</span><span id="__span-1-193"><a id="__codelineno-1-193" name="__codelineno-1-193" href="#__codelineno-1-193"></a><span class="n">args</span> <span class="o">=</span> <span class="n">TrainingArguments</span><span class="p">(</span>
+</span><span id="__span-1-194"><a id="__codelineno-1-194" name="__codelineno-1-194" href="#__codelineno-1-194"></a>    <span class="n">output_dir</span><span class="o">=</span><span class="s2">&quot;models_for_qa&quot;</span><span class="p">,</span>
+</span><span id="__span-1-195"><a id="__codelineno-1-195" name="__codelineno-1-195" href="#__codelineno-1-195"></a>    <span class="n">per_device_train_batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+</span><span id="__span-1-196"><a id="__codelineno-1-196" name="__codelineno-1-196" href="#__codelineno-1-196"></a>    <span class="n">per_device_eval_batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+</span><span id="__span-1-197"><a id="__codelineno-1-197" name="__codelineno-1-197" href="#__codelineno-1-197"></a>    <span class="n">eval_strategy</span><span class="o">=</span><span class="s2">&quot;steps&quot;</span><span class="p">,</span>
+</span><span id="__span-1-198"><a id="__codelineno-1-198" name="__codelineno-1-198" href="#__codelineno-1-198"></a>    <span class="n">eval_steps</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+</span><span id="__span-1-199"><a id="__codelineno-1-199" name="__codelineno-1-199" href="#__codelineno-1-199"></a>    <span class="n">save_strategy</span><span class="o">=</span><span class="s2">&quot;epoch&quot;</span><span class="p">,</span>
+</span><span id="__span-1-200"><a id="__codelineno-1-200" name="__codelineno-1-200" href="#__codelineno-1-200"></a>    <span class="n">logging_steps</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+</span><span id="__span-1-201"><a id="__codelineno-1-201" name="__codelineno-1-201" href="#__codelineno-1-201"></a>    <span class="n">num_train_epochs</span><span class="o">=</span><span class="mi">1</span>
+</span><span id="__span-1-202"><a id="__codelineno-1-202" name="__codelineno-1-202" href="#__codelineno-1-202"></a><span class="p">)</span>
+</span><span id="__span-1-203"><a id="__codelineno-1-203" name="__codelineno-1-203" href="#__codelineno-1-203"></a>
+</span><span id="__span-1-204"><a id="__codelineno-1-204" name="__codelineno-1-204" href="#__codelineno-1-204"></a><span class="n">trainer</span> <span class="o">=</span> <span class="n">Trainer</span><span class="p">(</span>
+</span><span id="__span-1-205"><a id="__codelineno-1-205" name="__codelineno-1-205" href="#__codelineno-1-205"></a>    <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
+</span><span id="__span-1-206"><a id="__codelineno-1-206" name="__codelineno-1-206" href="#__codelineno-1-206"></a>    <span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">,</span>
+</span><span id="__span-1-207"><a id="__codelineno-1-207" name="__codelineno-1-207" href="#__codelineno-1-207"></a>    <span class="n">tokenizer</span><span class="o">=</span><span class="n">tokenizer</span><span class="p">,</span>
+</span><span id="__span-1-208"><a id="__codelineno-1-208" name="__codelineno-1-208" href="#__codelineno-1-208"></a>    <span class="n">train_dataset</span><span class="o">=</span><span class="n">tokenied_datasets</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">],</span>
+</span><span id="__span-1-209"><a id="__codelineno-1-209" name="__codelineno-1-209" href="#__codelineno-1-209"></a>    <span class="n">eval_dataset</span><span class="o">=</span><span class="n">tokenied_datasets</span><span class="p">[</span><span class="s2">&quot;validation&quot;</span><span class="p">],</span>
+</span><span id="__span-1-210"><a id="__codelineno-1-210" name="__codelineno-1-210" href="#__codelineno-1-210"></a>    <span class="n">data_collator</span><span class="o">=</span><span class="n">DefaultDataCollator</span><span class="p">(),</span>
+</span><span id="__span-1-211"><a id="__codelineno-1-211" name="__codelineno-1-211" href="#__codelineno-1-211"></a>    <span class="n">compute_metrics</span><span class="o">=</span><span class="n">metirc</span>
+</span><span id="__span-1-212"><a id="__codelineno-1-212" name="__codelineno-1-212" href="#__codelineno-1-212"></a><span class="p">)</span>
+</span><span id="__span-1-213"><a id="__codelineno-1-213" name="__codelineno-1-213" href="#__codelineno-1-213"></a>
+</span><span id="__span-1-214"><a id="__codelineno-1-214" name="__codelineno-1-214" href="#__codelineno-1-214"></a><span class="n">trainer</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+</span><span id="__span-1-215"><a id="__codelineno-1-215" name="__codelineno-1-215" href="#__codelineno-1-215"></a>
+</span><span id="__span-1-216"><a id="__codelineno-1-216" name="__codelineno-1-216" href="#__codelineno-1-216"></a><span class="n">model</span><span class="o">.</span><span class="n">save_pretrained</span><span class="p">(</span><span class="s2">&quot;save-model-solution2&quot;</span><span class="p">)</span>
+</span></code></pre></div>
 <h3 id="_11">方案二：</h3>
-<pre><code class="language-python">
-from datasets import load_dataset, DatasetDict
-from transformers import AutoTokenizer, AutoModelForQuestionAnswering, TrainingArguments, Trainer, DefaultDataCollator
-
-datasets = DatasetDict.load_from_disk(&quot;mrc_data&quot;)
-datasets
-
-datasets[&quot;train&quot;][0]
-
-tokenizer = AutoTokenizer.from_pretrained(&quot;hfl/chinese-macbert-base&quot;)
-tokenizer
-
-sample_dataset = datasets[&quot;train&quot;].select(range(10))
-
-tokenized_examples = tokenizer(text=sample_dataset[&quot;question&quot;],
-                               text_pair=sample_dataset[&quot;context&quot;],
-                               return_offsets_mapping=True,
-                               max_length=512, truncation=&quot;only_second&quot;, padding=&quot;max_length&quot;)
-tokenized_examples.keys()
-
-
-print(tokenized_examples[&quot;offset_mapping&quot;][0], len(tokenized_examples[&quot;offset_mapping&quot;][0]))
-
-offset_mapping = tokenized_examples.pop(&quot;offset_mapping&quot;)
-
-for idx, offset in enumerate(offset_mapping):
-    answer = sample_dataset[idx][&quot;answers&quot;]
-    start_char = answer[&quot;answer_start&quot;][1]
-    end_char = start_char + len(answer[&quot;text&quot;][0])
-    context_start = tokenized_examples.sequence_ids(idx).index(1)
-    context_end = tokenized_examples.sequence_ids(idx).index(None, context_start) - 1
-
-    if offset[context_end][1] &lt; start_char or offset[context_start][0] &gt; end_char:
-        start_token_pos = 0
-        end_token_pos = 0
-    else:
-        token_id = context_start
-        while token_id &lt;= context_end and offset[token_id][0] &lt; start_char:
-            token_id += 1
-        start_token_pos = token_id
-        token_id = context_end
-        while token_id &gt;= context_start and offset[token_id][1] &gt; end_char:
-            token_id -=1
-        end_token_pos = token_id
-
-    print(answer, start_char, end_char, context_start, context_end, start_token_pos, end_token_pos)
-    print(&quot;token answer decode:&quot;, tokenizer.decode(tokenized_examples[&quot;input_ids&quot;][idx][start_token_pos: end_token_pos + 1]))
-
-def process_func(examples):
-    tokenized_examples = tokenizer(text=examples[&quot;question&quot;],
-                               text_pair=examples[&quot;context&quot;],
-                               return_offsets_mapping=True,
-                               max_length=384, truncation=&quot;only_second&quot;, padding=&quot;max_length&quot;)
-    offset_mapping = tokenized_examples.pop(&quot;offset_mapping&quot;)
-    start_positions = []
-    end_positions = []
-    for idx, offset in enumerate(offset_mapping):
-        answer = examples[&quot;answers&quot;][idx]
-        start_char = answer[&quot;answer_start&quot;][0]
-        end_char = start_char + len(answer[&quot;text&quot;][0])
-        context_start = tokenized_examples.sequence_ids(idx).index(1)
-        context_end = tokenized_examples.sequence_ids(idx).index(None, context_start) - 1
-        if offset[context_end][1] &lt; start_char or offset[context_start][0] &gt; end_char:
-            start_token_pos = 0
-            end_token_pos = 0
-        else:
-            token_id = context_start
-            while token_id &lt;= context_end and offset[token_id][0] &lt; start_char:
-                token_id += 1
-            start_token_pos = token_id
-            token_id = context_end
-            while token_id &gt;= context_start and offset[token_id][1] &gt; end_char:
-                token_id -=1
-            end_token_pos = token_id
-        start_positions.append(start_token_pos)
-        end_positions.append(end_token_pos)
-
-    tokenized_examples[&quot;start_positions&quot;] = start_positions
-    tokenized_examples[&quot;end_positions&quot;] = end_positions
-    return tokenized_examples
-
-tokenied_datasets = datasets.map(process_func, batched=True, remove_columns=datasets[&quot;train&quot;].column_names)
-tokenied_datasets
-
-model = AutoModelForQuestionAnswering.from_pretrained(&quot;hfl/chinese-macbert-base&quot;)
-
-
-args = TrainingArguments(
-    output_dir=&quot;models_for_qa&quot;,
-    per_device_train_batch_size=32,
-    per_device_eval_batch_size=32,
-    eval_strategy=&quot;epoch&quot;,
-    save_strategy=&quot;epoch&quot;,
-    logging_steps=50,
-    num_train_epochs=3
-)
-
-trainer = Trainer(
-    model=model,
-    args=args,
-    tokenizer=tokenizer,
-    train_dataset=tokenied_datasets[&quot;train&quot;],
-    eval_dataset=tokenied_datasets[&quot;validation&quot;],
-    data_collator=DefaultDataCollator()
-)
-
-trainer.train()
-
-model.save_pretrained(&quot;saved-model&quot;)
-
-
-</code></pre>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">datasets</span> <span class="kn">import</span> <span class="n">load_dataset</span><span class="p">,</span> <span class="n">DatasetDict</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span> <span class="nn">transformers</span> <span class="kn">import</span> <span class="n">AutoTokenizer</span><span class="p">,</span> <span class="n">AutoModelForQuestionAnswering</span><span class="p">,</span> <span class="n">TrainingArguments</span><span class="p">,</span> <span class="n">Trainer</span><span class="p">,</span> <span class="n">DefaultDataCollator</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">datasets</span> <span class="o">=</span> <span class="n">DatasetDict</span><span class="o">.</span><span class="n">load_from_disk</span><span class="p">(</span><span class="s2">&quot;mrc_data&quot;</span><span class="p">)</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">datasets</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="n">tokenizer</span> <span class="o">=</span> <span class="n">AutoTokenizer</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;hfl/chinese-macbert-base&quot;</span><span class="p">)</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">tokenizer</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="n">sample_dataset</span> <span class="o">=</span> <span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="n">tokenized_examples</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">sample_dataset</span><span class="p">[</span><span class="s2">&quot;question&quot;</span><span class="p">],</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>                               <span class="n">text_pair</span><span class="o">=</span><span class="n">sample_dataset</span><span class="p">[</span><span class="s2">&quot;context&quot;</span><span class="p">],</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>                               <span class="n">return_offsets_mapping</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>                               <span class="n">max_length</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">truncation</span><span class="o">=</span><span class="s2">&quot;only_second&quot;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">&quot;max_length&quot;</span><span class="p">)</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="n">tokenized_examples</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="nb">print</span><span class="p">(</span><span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="n">offset_mapping</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">)</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">offset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">offset_mapping</span><span class="p">):</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>    <span class="n">answer</span> <span class="o">=</span> <span class="n">sample_dataset</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="s2">&quot;answers&quot;</span><span class="p">]</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>    <span class="n">start_char</span> <span class="o">=</span> <span class="n">answer</span><span class="p">[</span><span class="s2">&quot;answer_start&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>    <span class="n">end_char</span> <span class="o">=</span> <span class="n">start_char</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">answer</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>    <span class="n">context_start</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">sequence_ids</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>    <span class="n">context_end</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">sequence_ids</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">context_start</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>    <span class="k">if</span> <span class="n">offset</span><span class="p">[</span><span class="n">context_end</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">start_char</span> <span class="ow">or</span> <span class="n">offset</span><span class="p">[</span><span class="n">context_start</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">end_char</span><span class="p">:</span>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>        <span class="n">start_token_pos</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>        <span class="n">end_token_pos</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>        <span class="n">token_id</span> <span class="o">=</span> <span class="n">context_start</span>
+</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>        <span class="k">while</span> <span class="n">token_id</span> <span class="o">&lt;=</span> <span class="n">context_end</span> <span class="ow">and</span> <span class="n">offset</span><span class="p">[</span><span class="n">token_id</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">start_char</span><span class="p">:</span>
+</span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>            <span class="n">token_id</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-2-39"><a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>        <span class="n">start_token_pos</span> <span class="o">=</span> <span class="n">token_id</span>
+</span><span id="__span-2-40"><a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a>        <span class="n">token_id</span> <span class="o">=</span> <span class="n">context_end</span>
+</span><span id="__span-2-41"><a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a>        <span class="k">while</span> <span class="n">token_id</span> <span class="o">&gt;=</span> <span class="n">context_start</span> <span class="ow">and</span> <span class="n">offset</span><span class="p">[</span><span class="n">token_id</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">end_char</span><span class="p">:</span>
+</span><span id="__span-2-42"><a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a>            <span class="n">token_id</span> <span class="o">-=</span><span class="mi">1</span>
+</span><span id="__span-2-43"><a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a>        <span class="n">end_token_pos</span> <span class="o">=</span> <span class="n">token_id</span>
+</span><span id="__span-2-44"><a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>
+</span><span id="__span-2-45"><a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">,</span> <span class="n">start_char</span><span class="p">,</span> <span class="n">end_char</span><span class="p">,</span> <span class="n">context_start</span><span class="p">,</span> <span class="n">context_end</span><span class="p">,</span> <span class="n">start_token_pos</span><span class="p">,</span> <span class="n">end_token_pos</span><span class="p">)</span>
+</span><span id="__span-2-46"><a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;token answer decode:&quot;</span><span class="p">,</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;input_ids&quot;</span><span class="p">][</span><span class="n">idx</span><span class="p">][</span><span class="n">start_token_pos</span><span class="p">:</span> <span class="n">end_token_pos</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]))</span>
+</span><span id="__span-2-47"><a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a>
+</span><span id="__span-2-48"><a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a><span class="k">def</span> <span class="nf">process_func</span><span class="p">(</span><span class="n">examples</span><span class="p">):</span>
+</span><span id="__span-2-49"><a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a>    <span class="n">tokenized_examples</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">examples</span><span class="p">[</span><span class="s2">&quot;question&quot;</span><span class="p">],</span>
+</span><span id="__span-2-50"><a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a>                               <span class="n">text_pair</span><span class="o">=</span><span class="n">examples</span><span class="p">[</span><span class="s2">&quot;context&quot;</span><span class="p">],</span>
+</span><span id="__span-2-51"><a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a>                               <span class="n">return_offsets_mapping</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-2-52"><a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a>                               <span class="n">max_length</span><span class="o">=</span><span class="mi">384</span><span class="p">,</span> <span class="n">truncation</span><span class="o">=</span><span class="s2">&quot;only_second&quot;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">&quot;max_length&quot;</span><span class="p">)</span>
+</span><span id="__span-2-53"><a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a>    <span class="n">offset_mapping</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;offset_mapping&quot;</span><span class="p">)</span>
+</span><span id="__span-2-54"><a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a>    <span class="n">start_positions</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-2-55"><a id="__codelineno-2-55" name="__codelineno-2-55" href="#__codelineno-2-55"></a>    <span class="n">end_positions</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-2-56"><a id="__codelineno-2-56" name="__codelineno-2-56" href="#__codelineno-2-56"></a>    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">offset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">offset_mapping</span><span class="p">):</span>
+</span><span id="__span-2-57"><a id="__codelineno-2-57" name="__codelineno-2-57" href="#__codelineno-2-57"></a>        <span class="n">answer</span> <span class="o">=</span> <span class="n">examples</span><span class="p">[</span><span class="s2">&quot;answers&quot;</span><span class="p">][</span><span class="n">idx</span><span class="p">]</span>
+</span><span id="__span-2-58"><a id="__codelineno-2-58" name="__codelineno-2-58" href="#__codelineno-2-58"></a>        <span class="n">start_char</span> <span class="o">=</span> <span class="n">answer</span><span class="p">[</span><span class="s2">&quot;answer_start&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-2-59"><a id="__codelineno-2-59" name="__codelineno-2-59" href="#__codelineno-2-59"></a>        <span class="n">end_char</span> <span class="o">=</span> <span class="n">start_char</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">answer</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-2-60"><a id="__codelineno-2-60" name="__codelineno-2-60" href="#__codelineno-2-60"></a>        <span class="n">context_start</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">sequence_ids</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-2-61"><a id="__codelineno-2-61" name="__codelineno-2-61" href="#__codelineno-2-61"></a>        <span class="n">context_end</span> <span class="o">=</span> <span class="n">tokenized_examples</span><span class="o">.</span><span class="n">sequence_ids</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">context_start</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-2-62"><a id="__codelineno-2-62" name="__codelineno-2-62" href="#__codelineno-2-62"></a>        <span class="k">if</span> <span class="n">offset</span><span class="p">[</span><span class="n">context_end</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">start_char</span> <span class="ow">or</span> <span class="n">offset</span><span class="p">[</span><span class="n">context_start</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">end_char</span><span class="p">:</span>
+</span><span id="__span-2-63"><a id="__codelineno-2-63" name="__codelineno-2-63" href="#__codelineno-2-63"></a>            <span class="n">start_token_pos</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-2-64"><a id="__codelineno-2-64" name="__codelineno-2-64" href="#__codelineno-2-64"></a>            <span class="n">end_token_pos</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-2-65"><a id="__codelineno-2-65" name="__codelineno-2-65" href="#__codelineno-2-65"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-2-66"><a id="__codelineno-2-66" name="__codelineno-2-66" href="#__codelineno-2-66"></a>            <span class="n">token_id</span> <span class="o">=</span> <span class="n">context_start</span>
+</span><span id="__span-2-67"><a id="__codelineno-2-67" name="__codelineno-2-67" href="#__codelineno-2-67"></a>            <span class="k">while</span> <span class="n">token_id</span> <span class="o">&lt;=</span> <span class="n">context_end</span> <span class="ow">and</span> <span class="n">offset</span><span class="p">[</span><span class="n">token_id</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">start_char</span><span class="p">:</span>
+</span><span id="__span-2-68"><a id="__codelineno-2-68" name="__codelineno-2-68" href="#__codelineno-2-68"></a>                <span class="n">token_id</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-2-69"><a id="__codelineno-2-69" name="__codelineno-2-69" href="#__codelineno-2-69"></a>            <span class="n">start_token_pos</span> <span class="o">=</span> <span class="n">token_id</span>
+</span><span id="__span-2-70"><a id="__codelineno-2-70" name="__codelineno-2-70" href="#__codelineno-2-70"></a>            <span class="n">token_id</span> <span class="o">=</span> <span class="n">context_end</span>
+</span><span id="__span-2-71"><a id="__codelineno-2-71" name="__codelineno-2-71" href="#__codelineno-2-71"></a>            <span class="k">while</span> <span class="n">token_id</span> <span class="o">&gt;=</span> <span class="n">context_start</span> <span class="ow">and</span> <span class="n">offset</span><span class="p">[</span><span class="n">token_id</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">end_char</span><span class="p">:</span>
+</span><span id="__span-2-72"><a id="__codelineno-2-72" name="__codelineno-2-72" href="#__codelineno-2-72"></a>                <span class="n">token_id</span> <span class="o">-=</span><span class="mi">1</span>
+</span><span id="__span-2-73"><a id="__codelineno-2-73" name="__codelineno-2-73" href="#__codelineno-2-73"></a>            <span class="n">end_token_pos</span> <span class="o">=</span> <span class="n">token_id</span>
+</span><span id="__span-2-74"><a id="__codelineno-2-74" name="__codelineno-2-74" href="#__codelineno-2-74"></a>        <span class="n">start_positions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">start_token_pos</span><span class="p">)</span>
+</span><span id="__span-2-75"><a id="__codelineno-2-75" name="__codelineno-2-75" href="#__codelineno-2-75"></a>        <span class="n">end_positions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">end_token_pos</span><span class="p">)</span>
+</span><span id="__span-2-76"><a id="__codelineno-2-76" name="__codelineno-2-76" href="#__codelineno-2-76"></a>
+</span><span id="__span-2-77"><a id="__codelineno-2-77" name="__codelineno-2-77" href="#__codelineno-2-77"></a>    <span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;start_positions&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">start_positions</span>
+</span><span id="__span-2-78"><a id="__codelineno-2-78" name="__codelineno-2-78" href="#__codelineno-2-78"></a>    <span class="n">tokenized_examples</span><span class="p">[</span><span class="s2">&quot;end_positions&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">end_positions</span>
+</span><span id="__span-2-79"><a id="__codelineno-2-79" name="__codelineno-2-79" href="#__codelineno-2-79"></a>    <span class="k">return</span> <span class="n">tokenized_examples</span>
+</span><span id="__span-2-80"><a id="__codelineno-2-80" name="__codelineno-2-80" href="#__codelineno-2-80"></a>
+</span><span id="__span-2-81"><a id="__codelineno-2-81" name="__codelineno-2-81" href="#__codelineno-2-81"></a><span class="n">tokenied_datasets</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">process_func</span><span class="p">,</span> <span class="n">batched</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">remove_columns</span><span class="o">=</span><span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">column_names</span><span class="p">)</span>
+</span><span id="__span-2-82"><a id="__codelineno-2-82" name="__codelineno-2-82" href="#__codelineno-2-82"></a><span class="n">tokenied_datasets</span>
+</span><span id="__span-2-83"><a id="__codelineno-2-83" name="__codelineno-2-83" href="#__codelineno-2-83"></a>
+</span><span id="__span-2-84"><a id="__codelineno-2-84" name="__codelineno-2-84" href="#__codelineno-2-84"></a><span class="n">model</span> <span class="o">=</span> <span class="n">AutoModelForQuestionAnswering</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;hfl/chinese-macbert-base&quot;</span><span class="p">)</span>
+</span><span id="__span-2-85"><a id="__codelineno-2-85" name="__codelineno-2-85" href="#__codelineno-2-85"></a>
+</span><span id="__span-2-86"><a id="__codelineno-2-86" name="__codelineno-2-86" href="#__codelineno-2-86"></a>
+</span><span id="__span-2-87"><a id="__codelineno-2-87" name="__codelineno-2-87" href="#__codelineno-2-87"></a><span class="n">args</span> <span class="o">=</span> <span class="n">TrainingArguments</span><span class="p">(</span>
+</span><span id="__span-2-88"><a id="__codelineno-2-88" name="__codelineno-2-88" href="#__codelineno-2-88"></a>    <span class="n">output_dir</span><span class="o">=</span><span class="s2">&quot;models_for_qa&quot;</span><span class="p">,</span>
+</span><span id="__span-2-89"><a id="__codelineno-2-89" name="__codelineno-2-89" href="#__codelineno-2-89"></a>    <span class="n">per_device_train_batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+</span><span id="__span-2-90"><a id="__codelineno-2-90" name="__codelineno-2-90" href="#__codelineno-2-90"></a>    <span class="n">per_device_eval_batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+</span><span id="__span-2-91"><a id="__codelineno-2-91" name="__codelineno-2-91" href="#__codelineno-2-91"></a>    <span class="n">eval_strategy</span><span class="o">=</span><span class="s2">&quot;epoch&quot;</span><span class="p">,</span>
+</span><span id="__span-2-92"><a id="__codelineno-2-92" name="__codelineno-2-92" href="#__codelineno-2-92"></a>    <span class="n">save_strategy</span><span class="o">=</span><span class="s2">&quot;epoch&quot;</span><span class="p">,</span>
+</span><span id="__span-2-93"><a id="__codelineno-2-93" name="__codelineno-2-93" href="#__codelineno-2-93"></a>    <span class="n">logging_steps</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+</span><span id="__span-2-94"><a id="__codelineno-2-94" name="__codelineno-2-94" href="#__codelineno-2-94"></a>    <span class="n">num_train_epochs</span><span class="o">=</span><span class="mi">3</span>
+</span><span id="__span-2-95"><a id="__codelineno-2-95" name="__codelineno-2-95" href="#__codelineno-2-95"></a><span class="p">)</span>
+</span><span id="__span-2-96"><a id="__codelineno-2-96" name="__codelineno-2-96" href="#__codelineno-2-96"></a>
+</span><span id="__span-2-97"><a id="__codelineno-2-97" name="__codelineno-2-97" href="#__codelineno-2-97"></a><span class="n">trainer</span> <span class="o">=</span> <span class="n">Trainer</span><span class="p">(</span>
+</span><span id="__span-2-98"><a id="__codelineno-2-98" name="__codelineno-2-98" href="#__codelineno-2-98"></a>    <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
+</span><span id="__span-2-99"><a id="__codelineno-2-99" name="__codelineno-2-99" href="#__codelineno-2-99"></a>    <span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">,</span>
+</span><span id="__span-2-100"><a id="__codelineno-2-100" name="__codelineno-2-100" href="#__codelineno-2-100"></a>    <span class="n">tokenizer</span><span class="o">=</span><span class="n">tokenizer</span><span class="p">,</span>
+</span><span id="__span-2-101"><a id="__codelineno-2-101" name="__codelineno-2-101" href="#__codelineno-2-101"></a>    <span class="n">train_dataset</span><span class="o">=</span><span class="n">tokenied_datasets</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">],</span>
+</span><span id="__span-2-102"><a id="__codelineno-2-102" name="__codelineno-2-102" href="#__codelineno-2-102"></a>    <span class="n">eval_dataset</span><span class="o">=</span><span class="n">tokenied_datasets</span><span class="p">[</span><span class="s2">&quot;validation&quot;</span><span class="p">],</span>
+</span><span id="__span-2-103"><a id="__codelineno-2-103" name="__codelineno-2-103" href="#__codelineno-2-103"></a>    <span class="n">data_collator</span><span class="o">=</span><span class="n">DefaultDataCollator</span><span class="p">()</span>
+</span><span id="__span-2-104"><a id="__codelineno-2-104" name="__codelineno-2-104" href="#__codelineno-2-104"></a><span class="p">)</span>
+</span><span id="__span-2-105"><a id="__codelineno-2-105" name="__codelineno-2-105" href="#__codelineno-2-105"></a>
+</span><span id="__span-2-106"><a id="__codelineno-2-106" name="__codelineno-2-106" href="#__codelineno-2-106"></a><span class="n">trainer</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+</span><span id="__span-2-107"><a id="__codelineno-2-107" name="__codelineno-2-107" href="#__codelineno-2-107"></a>
+</span><span id="__span-2-108"><a id="__codelineno-2-108" name="__codelineno-2-108" href="#__codelineno-2-108"></a><span class="n">model</span><span class="o">.</span><span class="n">save_pretrained</span><span class="p">(</span><span class="s2">&quot;saved-model&quot;</span><span class="p">)</span>
+</span></code></pre></div>
 
 
 

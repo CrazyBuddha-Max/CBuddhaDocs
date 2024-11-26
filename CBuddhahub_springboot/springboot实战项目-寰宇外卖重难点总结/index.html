@@ -43,15 +43,7 @@
     
     
       
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Roboto Mono"}</style>
-      
     
-    
-      <link rel="stylesheet" href="../../css/extra.css">
     
       <link rel="stylesheet" href="../../css/base.css">
     
@@ -402,6 +394,35 @@
     
   
   RE领域
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../code/demo-nb/" class="md-tabs__link">
+          
+  
+    
+  
+  大数据分析与代码实现
 
         </a>
       </li>
@@ -2168,6 +2189,205 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    大数据分析与代码实现
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            大数据分析与代码实现
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Jupyter笔记本
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            Jupyter笔记本
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/demo-nb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupyter Notebook with cells
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python文件
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python文件
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/notebook/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupytext demo (.py)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2322,54 +2542,54 @@ PageHelper.startPage是一个常用的MyBatis分页插件，用于在执行查�
 2.2.2. 在WebMvcConfig配置类中，添加日期格式化的配置。(一劳永逸，所有日期格式化都生效)</p>
 </blockquote>
 <h4 id="_3">具体实现代码：</h4>
-<pre><code class="language-java">/**
- * 对象映射器:基于jackson将Java对象转为json，或者将json转为Java对象
- * 将JSON解析为Java对象的过程称为 [从JSON反序列化Java对象]
- * 从Java对象生成JSON的过程称为 [序列化Java对象到JSON]
- */
-public class JacksonObjectMapper extends ObjectMapper {
-
-    public static final String DEFAULT_DATE_FORMAT = &quot;yyyy-MM-dd&quot;;
-    //public static final String DEFAULT_DATE_TIME_FORMAT = &quot;yyyy-MM-dd HH:mm:ss&quot;;
-    public static final String DEFAULT_DATE_TIME_FORMAT = &quot;yyyy-MM-dd HH:mm&quot;;
-    public static final String DEFAULT_TIME_FORMAT = &quot;HH:mm:ss&quot;;
-
-    public JacksonObjectMapper() {
-        super();
-        //收到未知属性时不报异常
-        this.configure(FAIL_ON_UNKNOWN_PROPERTIES, false);
-
-        //反序列化时，属性不存在的兼容处理
-        this.getDeserializationConfig().withoutFeatures(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
-
-        SimpleModule simpleModule = new SimpleModule()
-                .addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ofPattern(DEFAULT_DATE_TIME_FORMAT)))
-                .addDeserializer(LocalDate.class, new LocalDateDeserializer(DateTimeFormatter.ofPattern(DEFAULT_DATE_FORMAT)))
-                .addDeserializer(LocalTime.class, new LocalTimeDeserializer(DateTimeFormatter.ofPattern(DEFAULT_TIME_FORMAT)))
-                .addSerializer(LocalDateTime.class, new LocalDateTimeSerializer(DateTimeFormatter.ofPattern(DEFAULT_DATE_TIME_FORMAT)))
-                .addSerializer(LocalDate.class, new LocalDateSerializer(DateTimeFormatter.ofPattern(DEFAULT_DATE_FORMAT)))
-                .addSerializer(LocalTime.class, new LocalTimeSerializer(DateTimeFormatter.ofPattern(DEFAULT_TIME_FORMAT)));
-
-        //注册功能模块 例如，可以添加自定义序列化器和反序列化器
-        this.registerModule(simpleModule);
-    }
-}
-</code></pre>
-<pre><code class="language-java">    /**
-     * 扩展spring mvc框架的消息转换器
-     * @param converters
-     */
-    protected void extendMessageConverters(List&lt;HttpMessageConverter&lt;?&gt;&gt; converters) {
-        log.info(&quot;开始扩展消息转换器...&quot;);
-        //创建消息转换器列表
-        //创建一个消息转换器对象
-        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
-        //需要为消息转换器设置一个对象转换器，对象转换器可以将java对象序列化为json数据
-        converter.setObjectMapper(new JacksonObjectMapper());
-        //将消息转换器对象添加到消息转换器列表中
-        converters.add(0, converter);
-    }
-</code></pre>
+<p><div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cm">/**</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cm"> * 对象映射器:基于jackson将Java对象转为json，或者将json转为Java对象</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cm"> * 将JSON解析为Java对象的过程称为 [从JSON反序列化Java对象]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="cm"> * 从Java对象生成JSON的过程称为 [序列化Java对象到JSON]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="cm"> */</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">JacksonObjectMapper</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ObjectMapper</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">DEFAULT_DATE_FORMAT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;yyyy-MM-dd&quot;</span><span class="p">;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="c1">//public static final String DEFAULT_DATE_TIME_FORMAT = &quot;yyyy-MM-dd HH:mm:ss&quot;;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">DEFAULT_DATE_TIME_FORMAT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;yyyy-MM-dd HH:mm&quot;</span><span class="p">;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">DEFAULT_TIME_FORMAT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;HH:mm:ss&quot;</span><span class="p">;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">JacksonObjectMapper</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span><span class="kd">super</span><span class="p">();</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="c1">//收到未知属性时不报异常</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">configure</span><span class="p">(</span><span class="n">FAIL_ON_UNKNOWN_PROPERTIES</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="c1">//反序列化时，属性不存在的兼容处理</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">getDeserializationConfig</span><span class="p">().</span><span class="na">withoutFeatures</span><span class="p">(</span><span class="n">DeserializationFeature</span><span class="p">.</span><span class="na">FAIL_ON_UNKNOWN_PROPERTIES</span><span class="p">);</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="n">SimpleModule</span><span class="w"> </span><span class="n">simpleModule</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SimpleModule</span><span class="p">()</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">                </span><span class="p">.</span><span class="na">addDeserializer</span><span class="p">(</span><span class="n">LocalDateTime</span><span class="p">.</span><span class="na">class</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LocalDateTimeDeserializer</span><span class="p">(</span><span class="n">DateTimeFormatter</span><span class="p">.</span><span class="na">ofPattern</span><span class="p">(</span><span class="n">DEFAULT_DATE_TIME_FORMAT</span><span class="p">)))</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">                </span><span class="p">.</span><span class="na">addDeserializer</span><span class="p">(</span><span class="n">LocalDate</span><span class="p">.</span><span class="na">class</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LocalDateDeserializer</span><span class="p">(</span><span class="n">DateTimeFormatter</span><span class="p">.</span><span class="na">ofPattern</span><span class="p">(</span><span class="n">DEFAULT_DATE_FORMAT</span><span class="p">)))</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">                </span><span class="p">.</span><span class="na">addDeserializer</span><span class="p">(</span><span class="n">LocalTime</span><span class="p">.</span><span class="na">class</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LocalTimeDeserializer</span><span class="p">(</span><span class="n">DateTimeFormatter</span><span class="p">.</span><span class="na">ofPattern</span><span class="p">(</span><span class="n">DEFAULT_TIME_FORMAT</span><span class="p">)))</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">                </span><span class="p">.</span><span class="na">addSerializer</span><span class="p">(</span><span class="n">LocalDateTime</span><span class="p">.</span><span class="na">class</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LocalDateTimeSerializer</span><span class="p">(</span><span class="n">DateTimeFormatter</span><span class="p">.</span><span class="na">ofPattern</span><span class="p">(</span><span class="n">DEFAULT_DATE_TIME_FORMAT</span><span class="p">)))</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">                </span><span class="p">.</span><span class="na">addSerializer</span><span class="p">(</span><span class="n">LocalDate</span><span class="p">.</span><span class="na">class</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LocalDateSerializer</span><span class="p">(</span><span class="n">DateTimeFormatter</span><span class="p">.</span><span class="na">ofPattern</span><span class="p">(</span><span class="n">DEFAULT_DATE_FORMAT</span><span class="p">)))</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">                </span><span class="p">.</span><span class="na">addSerializer</span><span class="p">(</span><span class="n">LocalTime</span><span class="p">.</span><span class="na">class</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LocalTimeSerializer</span><span class="p">(</span><span class="n">DateTimeFormatter</span><span class="p">.</span><span class="na">ofPattern</span><span class="p">(</span><span class="n">DEFAULT_TIME_FORMAT</span><span class="p">)));</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">        </span><span class="c1">//注册功能模块 例如，可以添加自定义序列化器和反序列化器</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">registerModule</span><span class="p">(</span><span class="n">simpleModule</span><span class="p">);</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">    </span><span class="cm">/**</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cm">     * 扩展spring mvc框架的消息转换器</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cm">     * @param converters</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="cm">     */</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">extendMessageConverters</span><span class="p">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">HttpMessageConverter</span><span class="o">&lt;?&gt;&gt;</span><span class="w"> </span><span class="n">converters</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&quot;开始扩展消息转换器...&quot;</span><span class="p">);</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="c1">//创建消息转换器列表</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="c1">//创建一个消息转换器对象</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="n">MappingJackson2HttpMessageConverter</span><span class="w"> </span><span class="n">converter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">MappingJackson2HttpMessageConverter</span><span class="p">();</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="c1">//需要为消息转换器设置一个对象转换器，对象转换器可以将java对象序列化为json数据</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="n">converter</span><span class="p">.</span><span class="na">setObjectMapper</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">JacksonObjectMapper</span><span class="p">());</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="c1">//将消息转换器对象添加到消息转换器列表中</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="n">converters</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">converter</span><span class="p">);</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="p">}</span>
+</span></code></pre></div></p>
 <p>3.实现公共字段自动填充（技术点：枚举、注解、AOP、反射）</p>
 <blockquote>
 <p>3.1.自定义注解Autofill，用于标识需要进行公共字段自动填充的方法。
@@ -2378,42 +2598,41 @@ public class JacksonObjectMapper extends ObjectMapper {
 </blockquote>
 <p>4.店铺营业状态模块</p>
 <blockquote>
-<p>4.1. 出现问题：</p>
+<p>4.1. 出现问题：
+<div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="w">    </span><span class="cm">/**</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cm">     * 获取店铺的营业状态</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cm">     *</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="cm">     * @return</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="cm">     */</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nd">@ApiOperation</span><span class="p">(</span><span class="s">&quot;获取店铺的营业状态&quot;</span><span class="p">)</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nd">@GetMapping</span><span class="p">(</span><span class="s">&quot;/status&quot;</span><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Result</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getStatus</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="n">Integer</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Integer</span><span class="p">)</span><span class="w"> </span><span class="n">redisTemplate</span><span class="p">.</span><span class="na">opsForValue</span><span class="p">().</span><span class="na">get</span><span class="p">(</span><span class="n">KEY</span><span class="p">);</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&quot;获取店铺的营业状态:{}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s">&quot;营业中&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;打烊中&quot;</span><span class="p">);</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">success</span><span class="p">(</span><span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">status</span><span class="p">.</span><span class="na">toString</span><span class="p">()));</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="n">报错</span><span class="err">：</span><span class="n">Servlet</span><span class="p">.</span><span class="na">service</span><span class="p">()</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">servlet</span><span class="w"> </span><span class="o">[</span><span class="n">dispatcherServlet</span><span class="o">]</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">context</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">[]</span><span class="w"> </span><span class="n">threw</span><span class="w"> </span><span class="n">exception</span><span class="w"> </span><span class="o">[</span><span class="n">Request</span><span class="w"> </span><span class="n">processing</span><span class="w"> </span><span class="n">failed</span><span class="p">;</span><span class="w"> </span><span class="n">nested</span><span class="w"> </span><span class="n">exception</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">ClassCastException</span><span class="p">:</span><span class="w"> </span><span class="kd">class</span> <span class="nc">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">String</span><span class="w"> </span><span class="n">cannot</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">cast</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="kd">class</span> <span class="nc">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">Integer</span><span class="w"> </span><span class="p">(</span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">String</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">Integer</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">module</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">base</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">loader</span><span class="w"> </span><span class="err">&#39;</span><span class="n">bootstrap</span><span class="err">&#39;</span><span class="p">)</span><span class="o">]</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="n">cause</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">ClassCastException</span><span class="p">:</span><span class="w"> </span><span class="kd">class</span> <span class="nc">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">String</span><span class="w"> </span><span class="n">cannot</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">cast</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="kd">class</span> <span class="nc">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">Integer</span><span class="w"> </span><span class="p">(</span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">String</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">Integer</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">module</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">base</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">loader</span><span class="w"> </span><span class="err">&#39;</span><span class="n">bootstrap</span><span class="err">&#39;</span><span class="p">)</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="n">在这段代码处</span><span class="w"> </span><span class="nd">@PutMapping</span><span class="p">(</span><span class="s">&quot;/{status}&quot;</span><span class="p">)</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="nd">@ApiOperation</span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;设置店铺的营业状态&quot;</span><span class="p">)</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Result</span><span class="w"> </span><span class="nf">setStatus</span><span class="p">(</span><span class="nd">@PathVariable</span><span class="w"> </span><span class="n">Integer</span><span class="w"> </span><span class="n">status</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">        </span><span class="n">log</span><span class="p">.</span><span class="na">info</span><span class="p">(</span><span class="s">&quot;设置店铺的营业状态：{}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s">&quot;营业中&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;打烊中&quot;</span><span class="p">);</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">        </span><span class="n">redisTemplate</span><span class="p">.</span><span class="na">opsForValue</span><span class="p">().</span><span class="na">set</span><span class="p">(</span><span class="n">KEY</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="p">);</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">Result</span><span class="p">.</span><span class="na">success</span><span class="p">();</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="n">报错</span><span class="err">：</span><span class="n">Servlet</span><span class="p">.</span><span class="na">service</span><span class="p">()</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">servlet</span><span class="w"> </span><span class="o">[</span><span class="n">dispatcherServlet</span><span class="o">]</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">context</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">[]</span><span class="w"> </span><span class="n">threw</span><span class="w"> </span><span class="n">exception</span><span class="w"> </span><span class="o">[</span><span class="n">Request</span><span class="w"> </span><span class="n">processing</span><span class="w"> </span><span class="n">failed</span><span class="p">;</span><span class="w"> </span><span class="n">nested</span><span class="w"> </span><span class="n">exception</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">ClassCastException</span><span class="p">:</span><span class="w"> </span><span class="kd">class</span> <span class="nc">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">Integer</span><span class="w"> </span><span class="n">cannot</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">cast</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="kd">class</span> <span class="nc">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">String</span><span class="w"> </span><span class="p">(</span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">Integer</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">String</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">module</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">base</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">loader</span><span class="w"> </span><span class="err">&#39;</span><span class="n">bootstrap</span><span class="err">&#39;</span><span class="p">)</span><span class="o">]</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="n">cause</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">ClassCastException</span><span class="p">:</span><span class="w"> </span><span class="kd">class</span> <span class="nc">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">Integer</span><span class="w"> </span><span class="n">cannot</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">cast</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="kd">class</span> <span class="nc">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">String</span><span class="w"> </span><span class="p">(</span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">Integer</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">String</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">module</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">base</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">loader</span><span class="w"> </span><span class="err">&#39;</span><span class="n">bootstrap</span><span class="err">&#39;</span><span class="p">)</span>
+</span></code></pre></div></p>
 </blockquote>
-<pre><code class="language-java">
-    /**
-     * 获取店铺的营业状态
-     *
-     * @return
-     */
-    @ApiOperation(&quot;获取店铺的营业状态&quot;)
-    @GetMapping(&quot;/status&quot;)
-    public Result&lt;Integer&gt; getStatus() {
-        Integer status = (Integer) redisTemplate.opsForValue().get(KEY);
-        log.info(&quot;获取店铺的营业状态:{}&quot;, status == 1 ? &quot;营业中&quot; : &quot;打烊中&quot;);
-
-        return Result.success(Integer.parseInt(status.toString()));
-    }
-报错：Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')] with root cause
-
-java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
-
-
-
-在这段代码处 @PutMapping(&quot;/{status}&quot;)
-    @ApiOperation(value = &quot;设置店铺的营业状态&quot;)
-    public Result setStatus(@PathVariable Integer status) {
-        log.info(&quot;设置店铺的营业状态：{}&quot;, status == 1 ? &quot;营业中&quot; : &quot;打烊中&quot;);
-
-        redisTemplate.opsForValue().set(KEY, status);
-        return Result.success();
-    }
-
-
-报错：Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')] with root cause
-
-java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
-</code></pre>
 <p>原因：redis配置类里设置了value等序列化器，所以存储的数据都变成了String类型。不设置就可以了，只是在redis中查看数据时，看到的数据是乱码。并不影响使用。</p>
 
 

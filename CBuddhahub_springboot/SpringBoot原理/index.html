@@ -43,15 +43,7 @@
     
     
       
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Roboto Mono"}</style>
-      
     
-    
-      <link rel="stylesheet" href="../../css/extra.css">
     
       <link rel="stylesheet" href="../../css/base.css">
     
@@ -402,6 +394,35 @@
     
   
   RE领域
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../code/demo-nb/" class="md-tabs__link">
+          
+  
+    
+  
+  大数据分析与代码实现
 
         </a>
       </li>
@@ -2327,6 +2348,205 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    大数据分析与代码实现
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            大数据分析与代码实现
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Jupyter笔记本
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            Jupyter笔记本
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/demo-nb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupyter Notebook with cells
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python文件
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python文件
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/notebook/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jupytext demo (.py)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2604,23 +2824,19 @@ java -jar -Dserver.port=9091 springboot-vue-0.0.1-SNAPSHOT.jar --server.port=100
 <h5 id="1bean">1.获取bean</h5>
 <ul>
 <li>默认情况下，Spring项目启动时，会把bean都创建好放在IOC容器中，如果想主动获取这些bean，可以通过以下方式：</li>
-<li>1.根据name获取bean：</li>
+<li>1.根据name获取bean：
+<div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">ApplicationContext</span><span class="w"> </span><span class="n">context</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">AnnotationConfigApplicationContext</span><span class="p">(</span><span class="n">AppConfig</span><span class="p">.</span><span class="na">class</span><span class="p">);</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">Object</span><span class="w"> </span><span class="n">bean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="na">getBean</span><span class="p">(</span><span class="s">&quot;beanName&quot;</span><span class="p">);</span>
+</span></code></pre></div></li>
+<li>2.根据类型获取bean：
+<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">ApplicationContext</span><span class="w"> </span><span class="n">context</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">AnnotationConfigApplicationContext</span><span class="p">(</span><span class="n">AppConfig</span><span class="p">.</span><span class="na">class</span><span class="p">);</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">Object</span><span class="w"> </span><span class="n">bean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="na">getBean</span><span class="p">(</span><span class="n">User</span><span class="p">.</span><span class="na">class</span><span class="p">);</span>
+</span></code></pre></div></li>
+<li>3.根据name和类型获取bean：
+<div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">ApplicationContext</span><span class="w"> </span><span class="n">context</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">AnnotationConfigApplicationContext</span><span class="p">(</span><span class="n">AppConfig</span><span class="p">.</span><span class="na">class</span><span class="p">);</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">Object</span><span class="w"> </span><span class="n">bean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="na">getBean</span><span class="p">(</span><span class="s">&quot;beanName&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">User</span><span class="p">.</span><span class="na">class</span><span class="p">);</span>
+</span></code></pre></div></li>
 </ul>
-<pre><code class="language-java">ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-Object bean = context.getBean(&quot;beanName&quot;);
-</code></pre>
-<ul>
-<li>2.根据类型获取bean：</li>
-</ul>
-<pre><code class="language-java">ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-Object bean = context.getBean(User.class);
-</code></pre>
-<ul>
-<li>3.根据name和类型获取bean：</li>
-</ul>
-<pre><code class="language-java">ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-Object bean = context.getBean(&quot;beanName&quot;, User.class);
-</code></pre>
 <h5 id="2">2.配置作用域</h5>
 <blockquote>
 <p>1.默认情况下，Spring创建的Bean都是单例的，即在整个Spring容器中，Bean只有一个实例。
@@ -2632,28 +2848,28 @@ Object bean = context.getBean(&quot;beanName&quot;, User.class);
 - application：应用作用域，每个Spring应用范围内都会创建一个实例。</p>
 </blockquote>
 <h5 id="3">3.配置作用域的示例：</h5>
-<pre><code class="language-java">@Configuration
-public class AppConfig {
-    @Bean
-    @Scope(&quot;prototype&quot;) //每次使用bean时都会创建一个新的实例
-    @Lazy //默认singleton的bean在容器启动时被创建。当有该注解时延迟初始化，即第一次使用该bean时才会创建。
-
-    public User user() {
-        return new User();
-    }
-}
-</code></pre>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nd">@Configuration</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">AppConfig</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nd">@Bean</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nd">@Scope</span><span class="p">(</span><span class="s">&quot;prototype&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">//每次使用bean时都会创建一个新的实例</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nd">@Lazy</span><span class="w"> </span><span class="c1">//默认singleton的bean在容器启动时被创建。当有该注解时延迟初始化，即第一次使用该bean时才会创建。</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">User</span><span class="w"> </span><span class="nf">user</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">User</span><span class="p">();</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">}</span>
+</span></code></pre></div>
 <h5 id="4bean">4.第三方bean的管理</h5>
-<p>加上注解@Configuration配置类，加上注解@Bean配置第三方bean</p>
-<pre><code class="language-java">@Configuration
-public class AppConfig {
-    @Bean
-    public User user() {
-        return new User();
-    }
-}
-</code></pre>
-<p>对第三方bean进行依赖注入：</p>
+<p>加上注解@Configuration配置类，加上注解@Bean配置第三方bean
+<div class="language-java highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nd">@Configuration</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">AppConfig</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nd">@Bean</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">User</span><span class="w"> </span><span class="nf">user</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">User</span><span class="p">();</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">}</span>
+</span></code></pre></div>
+对第三方bean进行依赖注入：</p>
 <blockquote>
 <p>如果第三方bean需要依赖其他bean，直接在bean定义方法中设置形参即可，容器会根据类型自动装配。
 对bean的名称修改：
@@ -2679,35 +2895,33 @@ public class AppConfig {
 </blockquote>
 <h4 id="_5">自动配置的实现方式</h4>
 <blockquote>
-<p>方案一：通过@ComponentScan注解扫描指定包下的类，将类中的bean存入IOC容器中。</p>
-</blockquote>
-<pre><code class="language-java">@Configuration
-@ComponentScan(&quot;com.example.demo&quot;) &lt;---指定扫描的包
-public class AppConfig {
-}
-</code></pre>
-<blockquote>
-<p>方案二：通过@Import导入。使用@Import导入的类会被加载到IOC容器中，导入的形式有以下几种：
+<p>方案一：通过@ComponentScan注解扫描指定包下的类，将类中的bean存入IOC容器中。
+<div class="language-java highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nd">@Configuration</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nd">@ComponentScan</span><span class="p">(</span><span class="s">&quot;com.example.demo&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;---</span><span class="n">指定扫描的包</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">AppConfig</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">}</span>
+</span></code></pre></div>
+方案二：通过@Import导入。使用@Import导入的类会被加载到IOC容器中，导入的形式有以下几种：
 - 1.导入普通类：
 - 2.导入配置类：
 - 3.导入ImportSelector接口的实现类：
-- 4.EnableXxxx注解，封装@Import注解：</p>
+- 4.EnableXxxx注解，封装@Import注解：
+<div class="language-java highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nd">@Import</span><span class="p">({</span><span class="n">TokenParser</span><span class="p">.</span><span class="na">class</span><span class="p">})</span><span class="w"> </span><span class="c1">//导入普通类，交给ioc容器管理</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nd">@Import</span><span class="p">({</span><span class="n">HeaderConfig</span><span class="p">.</span><span class="na">class</span><span class="p">})</span><span class="w"> </span><span class="c1">//导入配置类，交给ioc容器管理</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nd">@Import</span><span class="p">({</span><span class="n">MyImportSelector</span><span class="p">.</span><span class="na">class</span><span class="p">})</span><span class="w"> </span><span class="c1">//导入ImportSelector接口实现类，交给ioc容器管理</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nd">@EnableHeaderConfig</span><span class="w"> </span><span class="c1">//导入EnableHeaderConfig注解，EnableHeaderConfig注解中封装了@Import注解，导入HeaderConfig配置类，交给ioc容器管理</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nd">@SpringBootApplication</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SpringbootWebConfig2Application</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">        </span><span class="n">SpringApplication</span><span class="p">.</span><span class="na">run</span><span class="p">(</span><span class="n">SpringbootWebConfig2Application</span><span class="p">.</span><span class="na">class</span><span class="p">,</span><span class="w"> </span><span class="n">args</span><span class="p">);</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="p">}</span>
+</span></code></pre></div></p>
 </blockquote>
-<pre><code class="language-java">@Import({TokenParser.class}) //导入普通类，交给ioc容器管理
-@Import({HeaderConfig.class}) //导入配置类，交给ioc容器管理
-@Import({MyImportSelector.class}) //导入ImportSelector接口实现类，交给ioc容器管理
-
-@EnableHeaderConfig //导入EnableHeaderConfig注解，EnableHeaderConfig注解中封装了@Import注解，导入HeaderConfig配置类，交给ioc容器管理
-@SpringBootApplication
-
-public class SpringbootWebConfig2Application {
-
-    public static void main(String[] args) {
-        SpringApplication.run(SpringbootWebConfig2Application.class, args);
-    }
-
-}
-</code></pre>
 <h4 id="_6">自动配置的底层原理</h4>
 <h5 id="_7">源码追踪:</h5>
 <h6 id="springbootapplicationspringbootenableautoconfigurationcomponentscanspringbootconfiguration">@SpringBootApplication注解标识在SpringBoot工程引导类上，是最重要的注解。其中包含了三个子注解：@EnableAutoConfiguration：@ComponentScan、@SpringBootConfiguration。</h6>
