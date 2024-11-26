@@ -1,14 +1,17 @@
-# <span style='color:blue'>(原创) springboot实现分层解耦的方案</span> :smile:
+---
+comments: true
+---
+(原创) springboot实现分层解耦的方案
 ***
 ###  1. 分层解耦的好处
-- ==解决代码复用性差，难以维护的缺点。==
-- ==提高代码的可读性，便于维护。==
-- ==提高代码的扩展性，便于扩展。==
+- 解决代码复用性差，难以维护的缺点。
+- 提高代码的可读性，便于维护。
+- 提高代码的扩展性，便于扩展。
 ***
 ###  2. 分层解耦的实现之三层架构分层
-- 控制层controller：==负责与前端交互，接收前端的请求，调用业务层处理请求，将处理结果返回给前端。==
-- 业务逻辑层service：==负责处理业务逻辑，调用持久层获取数据。==
-- 数据访问层(持久层)Dao：==负责数据库访问操作，包括数据的增删改查操作==
+- 控制层controller：负责与前端交互，接收前端的请求，调用业务层处理请求，将处理结果返回给前端。
+- 业务逻辑层service：负责处理业务逻辑，调用持久层获取数据。
+- 数据访问层(持久层)Dao：负责数据库访问操作，包括数据的增删改查操作。
 
 ***
 ###  3. 分层解耦的实现之三层架构解耦
@@ -55,9 +58,9 @@
 ### 5. DI依赖注入详解
 - ##### <span style='color:blue'>bean注入</span>
   - @Autowired注解，默认按照类型进行注入，如果存在多个相同类型的bean，则报错。解决方法如下：
-    - > <span style='color:green'>方法一：</span>在控制层的@Autowired注解下加上@Qualifier("bean的id")注解，表示当前bean生效。![img](https://img2023.cnblogs.com/blog/3467365/202406/3467365-20240625141014691-543689726.png)
-    - > <span style='color:green'>方法二：</span>在服务层@Service注解上加上@Primary注解，表示当前bean生效。![img](https://img2023.cnblogs.com/blog/3467365/202406/3467365-20240625141032535-1130257077.png)
-    - > <span style='color:green'>方法三：</span>在控制层上删除@Autowired注解，再加上@Resource(name= "bean的id")注解，表示当前bean生效。![img](https://img2023.cnblogs.com/blog/3467365/202406/3467365-20240625141750384-369258935.png)
+    - > <span style='color:green'>方法一：</span>在控制层的@Autowired注解下加上@Qualifier("bean的id")注解，表示当前bean生效。![img](../assets/CBuddhahub_springboot/3467365-20240625141014691-543689726.png)
+    - > <span style='color:green'>方法二：</span>在服务层@Service注解上加上@Primary注解，表示当前bean生效。![img](../assets/CBuddhahub_springboot/3467365-20240625141032535-1130257077.png)
+    - > <span style='color:green'>方法三：</span>在控制层上删除@Autowired注解，再加上@Resource(name= "bean的id")注解，表示当前bean生效。![img](../assets/CBuddhahub_springboot/3467365-20240625141750384-369258935.png)
  
 > 总结：@Resource注解和@Autowired注解都可以实现依赖注入，它们的区别是：
 > - @Autowired是spring框架提供的，@Resource注解是JDK提供的。

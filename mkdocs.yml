@@ -1,14 +1,19 @@
 site_name: CBuddhaHub
 site_url: http://abc.cra2y6uddha.fun/
 
+
 nav:
+  - index.md
+  - 个人博客:
+    - blog/index.md
   - 基础与难题:
     - 序言:
       - CBuddhahub/index_basic.md
     - 基础:
       - basic/IDEA中的Maven使用方法.md
-    
-
+      - basic/JAVA网络编程.md
+      - basic/javaWeb之请求响应.md
+      - basic/Maven高级使用.md
   - 数据库教程:
     - 序言:
       - CBuddhahub/index_db.md
@@ -24,10 +29,29 @@ nav:
       - CBuddhahub_springboot/登录校验与认证.md
       - CBuddhahub_springboot/实现springboot分层解耦技术.md
       - CBuddhahub_springboot/事务管理&AOP.md
-
+      - CBuddhahub_springboot/spring项目术语表.md
+      - CBuddhahub_springboot/springboot实战项目-寰宇外卖重难点总结.md
+  - AI领域:
+    - 序言:
+      - CBuddhahub/index_ai.md
+    - 正式开始:
+      - Transformers实战篇:
+        - LLM/Transformers实战篇/Transformers实战篇之基于截断策略的机器阅读理解任务实现.md
+        - LLM/Transformers实战篇/Transformers实战篇之命名实体识别.md
+      - LLM/Transformers显存优化策略.md
+      - LLM/大语言模型性能对比.md
+  - RE领域:
+    - 序言:
+      - CBuddhahub/index_ReverseEngineering.md
+    - 正式开始:
+      - RE/RE(1).md
+      - RE/RE(2).md
+      - RE/RE(3).md
+      - RE/RE(4).md
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh
   logo: assets/logo.jpg
   favicon: assets/logo.jpg
@@ -41,35 +65,76 @@ theme:
     - toc.follow
     - navigation.top
     - navigation.indexes
+    - navigation.footer
   palette: 
 
     # Palette toggle for light mode
-    - scheme: default
-      primary: amber
-      accent: deep purple
+    - scheme: cbhub
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
+        icon: material/toggle-switch 
+        name: 切换到暗模式
 
     # Palette toggle for dark mode
-    - scheme: slate
-      primary: brown
-      accent: blue grey
+    - scheme: cbhub
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+        icon: material/toggle-switch-off-outline
+        name: 切换到亮模式
   icon:
     repo: fontawesome/brands/github  
   font:
     text: Roboto Mono
 
 plugins:
-  - blog
   - search
+  - blog:
+      authors_profiles: true
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags 
+      enabled: !ENV
+      comments_path: "#__comments"
+  
 
 extra_css:
-  - stylesheets/extra.css
-
+  - css/extra.css
+  - css/base.css
+extra_javascript:
+  - js/base.js
 repo_url: https://github.com/CrazyBuddha-Max/CBuddhaDocs
 repo_name: CrazyBuddha-Max/CBuddhaDocs
 
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/CrazyBuddha-Max
+      name: CrazyBuddha-Max on github
+    - icon: fontawesome/brands/gitlab
+      link: http://www.cra2y6uddha.fun/
+      name: 我的另一个ai多模态网站
+  generator: false
+  analytics:
+    provider: google
+    property: G-CEY7FQJJ7D
+    feedback:
+      title: 这个页面对你有帮助吗?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: 这个页面有帮助！
+          data: 1
+          note: >-
+            谢谢你的反馈!
+        - icon: material/emoticon-sad-outline
+          name: 这个页面没有用!
+          data: 0
+          note: >- 
+            感谢你的反馈! 帮助我们改进此页面，使用我们的<a href="..." target="_blank" rel="noopener">反馈表单</a>.
+
+copyright: myweb by CrazyBuddha is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>

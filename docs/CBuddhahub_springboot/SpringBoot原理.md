@@ -1,10 +1,13 @@
+---
+comments: true
+---
 （原创）springboot原理
 ***
 ## 一、配置优先级
 ##### > 命令行参数 > java系统属性 > properties文件 > yml文件(主流) > 环境变量 
 
 > 1.java系统属性和命令行参数设置在IDEA中的实现如图：上面的箭头是java系统属性配置端口号为9091，下面的箭头是命令行参数配置端口号为10010。
-> ![img](https://img2023.cnblogs.com/blog/3467365/202408/3467365-20240807004639507-1183031855.png)
+> ![img](../assets/CBuddhahub_springboot/3467365-20240807004639507-1183031855.png)
 
 > 2.执行java指令，运行jar包时设置命令行参数和java系统属性的端口号：
 > java -jar -Dserver.port=9091 springboot-vue-0.0.1-SNAPSHOT.jar --server.port=10010
