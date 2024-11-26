@@ -1,4 +1,7 @@
-# <span style='color:blue'>原创：JAVA网络编程技术</span> :smile:
+---
+comments: true
+---
+(原创)JAVA网络编程技术
 ***
 ### 1.网络编程的<span style='color:orange'>定义</span>
 - 可以让设备中的程序与网络上其他设备中的程序进行数据交互，也就是实现网络通信的技术。
