@@ -77,9 +77,15 @@ theme:
         name: 切换到暗模式
 
     # Palette toggle for dark mode
+<<<<<<< HEAD
     - scheme: cbhub
       primary: custom
       accent: custom
+=======
+    - scheme: slate
+      primary: deep purple
+      accent: blue grey
+>>>>>>> d6f86b20b385143d9948ad7b06556a49eeb6a22a
       toggle:
         icon: material/toggle-switch-off-outline
         name: 切换到亮模式
