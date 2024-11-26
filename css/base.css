@@ -3,7 +3,13 @@ body{
     background-size:100% 100%;
     background-attachment: fixed;
     opacity: 1;
+    
+      
 }
+p {
+    color: white;
+  }
+  
 [data-md-color-scheme="cbhub"] {
     /* Primary color shades */
     --md-primary-fg-color:               hsla(#{hex2hsl($clr-indigo-500)}, 1);
@@ -13,8 +19,8 @@ body{
     --md-primary-bg-color--light:        hsla(0, 0%, 100%, 0.7);
   
     /* Accent color shades */
-    --md-accent-fg-color:                hsla(#{hex2hsl($clr-indigo-a200)}, 1);
-    --md-accent-fg-color--transparent:   hsla(#{hex2hsl($clr-indigo-a200)}, 0.1);
-    --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
-    --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
+    --md-accent-fg-color:                rgb(243, 223, 9);
+    --md-accent-fg-color--transparent:   hsla(92, 89%, 62%, 0.7);
+    /* --md-accent-bg-color:                rgb(233, 233, 19);
+    --md-accent-bg-color--light:         hsla(129, 75%, 50%, 0.7); */
   }
