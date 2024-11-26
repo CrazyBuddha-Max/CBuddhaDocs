@@ -1,20 +1,36 @@
 body{
-    background: url(../assets/CBuddhahub/905e75359796ce4dc0851bcffe880b61.jpg);
+    background: url(../assets/CBuddhahub/396a490296b897a30c25c08cb8367e56.jpg);
     background-size:100% 100%;
     background-attachment: fixed;
-    opacity: 0.96;
+    opacity: 1;
     
       
 }
 .md-grid {
-  max-width: 2160px; 
+  max-width: 1920px; 
 }
 p {
-    color: white;
+    color: hsl(0, 0%, 0%);
+    font-size: 32px;
+    
   }
+/* h1 {
+  color: rgb(22, 33, 241);
+  font-size: 32px;
+  font-weight: bold;
+  }
+  h2 {
+    color: rgb(22, 33, 241);
+    font-size: 32px;
+    
+  }
+  h3{
+    color: rgb(22, 33, 241);
+    font-size: 32px;
+  } */
   @font-face {
     font-family: 'Cbhub';
-    src:url('./taxuexunmiwenrou.ttf');
+    src:url('./AlimamaFangYuanTiVF-Thin-2.ttf');
     }
     :root {
       --md-text-font: "Cbhub"; 
@@ -22,15 +38,19 @@ p {
     }
 [data-md-color-scheme="cbhub"] {
     /* Primary color shades */
-    --md-primary-fg-color:               hsla(#{hex2hsl($clr-indigo-500)}, 1);
+    /* --md-primary-fg-color:               hsla(#{hex2hsl($clr-indigo-500)}, 1);
     --md-primary-fg-color--light:        hsla(#{hex2hsl($clr-indigo-400)}, 1);
-    --md-primary-fg-color--dark:         hsla(#{hex2hsl($clr-indigo-700)}, 1);
+    --md-primary-fg-color--dark:         hsla(#{hex2hsl($clr-indigo-700)}, 1); 
+    */
+    --md-primary-fg-color:               rgba(0, 0, 0, 0.532);
+    --md-primary-fg-color--light:        rgba(243, 224, 9, 0.845);
+    --md-primary-fg-color--dark:         rgba(243, 224, 9, 0.845);
     --md-primary-bg-color:               hsla(0, 0%, 100%, 1);
     --md-primary-bg-color--light:        hsla(0, 0%, 100%, 0.7);
   
     /* Accent color shades */
-    --md-accent-fg-color:                rgb(243, 223, 9);
+    --md-accent-fg-color:                rgba(243, 224, 9, 0.845);
     --md-accent-fg-color--transparent:   hsla(92, 89%, 62%, 0.7);
-    /* --md-accent-bg-color:                rgb(233, 233, 19);
-    --md-accent-bg-color--light:         hsla(129, 75%, 50%, 0.7); */
+    --md-accent-bg-color:                rgb(233, 233, 19);
+    --md-accent-bg-color--light:         hsla(129, 75%, 50%, 0.7);
   }
