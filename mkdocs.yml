@@ -14,6 +14,15 @@ nav:
       - basic/JAVA网络编程.md
       - basic/javaWeb之请求响应.md
       - basic/Maven高级使用.md
+  - 算法与数据结构:
+    - 序言:
+      - CBuddhahub/index_algorithm.md
+    - 算法导论:
+      - algorithm/1-算法导论/导出/分治策略_.md
+      - algorithm/1-算法导论/导出/名词解释_.md
+      - algorithm/1-算法导论/分治策略解决最大子数组的逻辑.md
+    - 数据结构:
+      - algorithm/2-数据结构/表、栈和队列.md
   - 数据库教程:
     - 序言:
       - CBuddhahub/index_db.md
@@ -36,8 +45,8 @@ nav:
       - CBuddhahub/index_ai.md
     - 正式开始:
       - Transformers实战篇:
-        - LLM/Transformers实战篇/Transformers实战篇之基于截断策略的机器阅读理解任务实现.md
-        - LLM/Transformers实战篇/Transformers实战篇之命名实体识别.md
+        - LLM/Transformers实战篇/基于截断策略的机器阅读理解任务实现.md
+        - LLM/Transformers实战篇/命名实体识别.md
       - LLM/Transformers显存优化策略.md
       - LLM/大语言模型性能对比.md
   - RE领域:
@@ -48,6 +57,11 @@ nav:
       - RE/RE(2).md
       - RE/RE(3).md
       - RE/RE(4).md
+  -  大数据分析与代码实现:
+      - Jupyter笔记本:
+        - code/demo-nb.ipynb
+      - Python文件: 
+        - code/notebook.py
 
 theme:
   name: material
@@ -70,26 +84,26 @@ theme:
 
     # Palette toggle for light mode
     - scheme: cbhub
-      primary: custom
-      accent: custom
+      primary: lime  
       toggle:
         icon: material/toggle-switch 
         name: 切换到暗模式
 
     # Palette toggle for dark mode
-    - scheme: cbhub
-      primary: custom
-      accent: custom
+    - scheme: slate
+      primary: black
+      accent: deep purple
       toggle:
         icon: material/toggle-switch-off-outline
         name: 切换到亮模式
   icon:
-    repo: fontawesome/brands/github  
-  font:
-    text: Roboto Mono
+    repo: fontawesome/brands/chrome  
+  font: false
+
 
 plugins:
   - search
+  - mkdocs-jupyter
   - blog:
       authors_profiles: true
   - rss:
@@ -102,14 +116,21 @@ plugins:
       enabled: !ENV
       comments_path: "#__comments"
   
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 extra_css:
-  - css/extra.css
   - css/base.css
 extra_javascript:
   - js/base.js
-repo_url: https://github.com/CrazyBuddha-Max/CBuddhaDocs
-repo_name: CrazyBuddha-Max/CBuddhaDocs
+repo_url: http://www.cra2y6uddha.fun/
+repo_name: 我的ai多模态网站
 
 extra:
   social:
