@@ -5,7 +5,7 @@
 # 欢迎大家来到我的地盘~
 ### 右下角狐狸图标是本人的另一个ai多模态网站，欢迎大家访问~
 
-#Welcome to CrazyBuddha's [personal website](http://abc.cra2y6uddha.fun/). If you can't open it, use the [alternative website](https://CrazyBuddha-Max.github.io/CBuddhaDocs/)!! !
+# Welcome to CrazyBuddha's [personal website](http://abc.cra2y6uddha.fun/). If you can't open it, use the [alternative website](https://CrazyBuddha-Max.github.io/CBuddhaDocs/)!! !
 ## Website introduction~
 ### This is my personal learning website. I will share my learning technology stack and ideas.
 ### This is not just a learning platform for everyone. I need to improve my cognition through everyone's suggestions. And this helps to increase my mastery of knowledge.
